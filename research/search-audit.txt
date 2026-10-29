@@ -1,0 +1,192 @@
+CEBench-Live 定向研究检索审计
+记录日期：2026-10-29（Asia/Shanghai）
+撰写者：landscape_benchmarks 子任务研究者
+范围：临床/泛健康证据产品、研究agents、相关医疗与科学综合benchmark，以及HELM、MLPerf、SPEC的评价治理。
+
+1. 本次研究实际做了什么
+
+本次为广泛、多轮、问题导向的网络定向研究，目的是形成一个可评审的benchmark初版；并非按预注册方案执行的系统综述，不宣称穷尽“全网所有工具/所有benchmark”。优先查原始研究论文、作者官方代码/项目、机构官方规则与厂商功能文档。检索截止日期为2026-10-29；网页可能由搜索索引提供，索引日期与实验运行日期必须区分。本次没有运行OpenEvidence、Elicit、Consensus、scite或任何模型的实际性能比较。
+
+使用网络search与open/click/find核对。未登录付费产品、未申请受限数据、未测试API、未收集患者数据；没有将搜索结果中的产品宣传准确率直接视为独立测量。也没有据媒体文章、Reddit或第三方榜单给产品作排名。
+
+2. 实际检索主题与关键词组（代表性原样记录）
+
+2.1 产品与当前证据工作流
+- OpenEvidence official clinical evidence sources randomized validation
+- site.openevidence.com about clinical evidence
+- site.openevidence.com EvidenceGrade GRADE
+- site.openevidence.com announcements clinical sources
+- Elicit systematic review official accuracy
+- site.elicit.com research agent evaluated systematic review official
+- site.consensus.app how consensus works research
+- site.scite.ai assistant smart citations
+
+2.2 医疗/科学综合benchmark
+- MedHELM benchmark Stanford medical evaluation
+- MIRAGE benchmark medical retrieval augmented generation 2024 github
+- General-purpose large language models outperform specialized clinical AI tools medical benchmarks OpenEvidence Nature 2026
+- automated systematic review benchmark agents SciFact RobotReviewer ASReview official
+- OpenScholar ScholarQABench Nature 2026 paper
+- "SciConBench"
+- "MedSR-Bench"
+- "EviSearch" "2604.14165"
+- "MedHELM" "37" "Nature Medicine"
+- site.github.com MedQA jin 2020 USMLE medical
+- site.pubmedqa.github.io PubMedQA dataset
+
+2.3 子任务与方法治理
+- site.asreview.nl benchmark simulation work saved recall official
+- site.nature.com ASReview active learning systematic reviews validation benchmark
+- site.robotreviewer.net randomized trial risk bias automated
+- site.cochrane.org Cochrane Evidence Synthesis AI benchmark automation
+- HELM holistic evaluation language models seven metrics accuracy calibration robustness fairness bias toxicity efficiency
+- site.mlcommons.org inference rules closed open division accuracy latency
+- site.spec.org cpu2017 run reporting rules geometric mean
+
+2.4 OpenAI研究benchmark核查
+- HealthBench evaluation healthcare benchmark（初始限定developers.openai.com/platform.openai.com/learn.chatgpt.com）
+- site.platform.openai.com HealthBench
+- HealthBench Professional official benchmark OpenAI medical research rubric github
+研究范围只涉及benchmark论文/数据卡，不提供模型购买、价格、型号选择或产品使用建议。没有将搜索所得非官方独立HealthBench站点误认为OpenAI官方。
+
+2.5 直接原文核验的已知prior art（由主任务定向补充，避免遗漏最近研究）
+- arxiv.org/abs/2505.22787（MedEvidence）
+- arxiv.org/abs/2605.09661（MedMeta）
+- arxiv.org/abs/2608.12741（KSR）
+- arxiv.org/abs/2604.14165（EviSearch，核对至v3）
+- medrxiv.org/content/10.64898/2026.07.30.26359375v1（MedSR）
+- nature.com/articles/s41591-026-04431-5（RCQ原始研究）
+- "s41591-026-04638-6"（RCQ研究的Matters Arising与回复）
+
+3. 来源层级、访问状态与本次可核实范围
+
+下列“全文”指网络工具返回了页面正文/原始HTML，可定位相应方法或声明；不意味着已独立复现实验或逐行审计全部代码。“search-index”意味着搜索索引返回相关内容，直接读取不成功或本次未全文读取；据此只作有限描述。
+
+3.1 原始研究正文/HTML或官方项目正文成功读取
+- MedEvidence：https://arxiv.org/html/2505.22787v1，原始HTML全文；已读方法与结论设定。
+- MedMeta：https://arxiv.org/html/2605.09661v1，原始HTML全文；已读workflow与评价结构。
+- Real-POCQi：https://arxiv.org/html/2606.28960v1，原始HTML全文；已核五轴评价、随机盲法与§5.9商业参与声明。
+- RCQ原始研究：https://www.nature.com/articles/s41591-026-04431-5，Nature正文成功读取（带cookies redirect）；已核任务、盲评设计、局限、利益声明及后续Matters Arising链接。
+- SciConBench：https://github.com/hayoungjungg/SciConBench，官方README正文；已核clean-room、配置、atomic-fact评分和monthly dataset。项目https://sciconbench.cs.princeton.edu/ 的direct open曾403，但search-index提供完整细节；项目即时更新数字与榜分不作为本次实测。
+- MedSR：https://github.com/MAGIC-AI4Med/MedSR-Copilot，官方README正文；已核PICOS、各agent、固定random-effects engine、可追溯输出和人工复核。medRxiv直接open曾403，期刊/预印本状态不得混用。
+- MIRAGE：https://github.com/gzxiong/MIRAGE，官方README正文；原始论文摘要补充范围。
+- MedQA：https://github.com/jind11/MedQA，官方README正文；已核来源、split、4/5 options和教材条件。
+- PubMedQA：https://pubmedqa.github.io/，项目正文；已核单摘要yes/no/maybe任务；不用旧榜分作当前模型评价。
+- HELM：https://arxiv.org/abs/2211.09110，原始摘要和论文元数据；官方项目页面为脚本应用，网页工具无正文。
+- MLPerf：https://github.com/mlcommons/inference_policies/blob/master/inference_rules.adoc，官方规则正文；已核SUT、质量/延迟、division、共享/复现/审计、禁止benchmark detection。
+- SPEC：https://spec.org/cpu2017/Docs/runrules.html，官方规则正文；已核配置披露、base/peak、重复运行及正相对比率几何平均。
+- Cochrane平台研究：https://www.cochrane.org/about-us/news/cochrane-launches-innovative-study-assess-ai-tools-evidence-synthesis，官方全文；2026-02-19计划公告，不能当研究结果。
+- Cochrane工具选择：https://www.cochrane.org/about-us/news/how-did-cochrane-select-ai-tools-evaluate-our-platform-study，官方全文；2026-03-11公告明确初选依据是厂商提交信息而非实测。
+- Elicit：https://support.elicit.com/en/articles/14759154-systematic-reviews-in-elicit，官方功能全文；当前workflow选择文档亦读取。仅证明厂商提供何种流程/设置，不证明独立性能。
+- Consensus：https://help.consensus.app/en/articles/9922673-how-consensus-works，官方功能全文。仅支持检索与综合定位及厂商所述功能。
+- scite：https://scite.ai/api，官方功能/API页面全文。仅支持citation-context及回答等功能。
+- Ai2/OpenScholar：https://allenai.org/blog/openscholar-nature 跳转https://allenai.org/blog/nature-openscilm，研究团队全文公告；已核2026-02-04发表公告、科学综合与citation质量范围。
+
+3.2 仅摘要/元数据或search-index足够支持有限描述
+- EviSearch：https://arxiv.org/abs/2604.14165v3，原始摘要及版本记录成功读取；未逐项审计整套实验。2026-09-27 v3与初始版本题名及方法变化显著，必须冻结版本。
+- KSR：https://arxiv.org/abs/2608.12741，原始摘要及元数据；非临床主题，不能外推性能到医疗。
+- HealthBench：https://arxiv.org/abs/2505.08775 与Professional https://arxiv.org/abs/2604.27470，原始研究摘要/search-index；研究者官方数据卡https://huggingface.co/datasets/openai/healthbench-professional亦见索引。未审计官方internal implementation或复现长度校正。
+- MedHELM：Stanford官方项目https://crfm.stanford.edu/helm/medhelm/v2.0.0/ 的search-index为35 benchmarks；官方2026公告https://hai.stanford.edu/news/measuring-what-medical-ai-can-actually-do 及正式论文元数据为37。必须引用相应版本，不能拼合成一个固定不变的benchmark。
+- ASReview：https://asreview.nl/simulate/ 与https://asreview.readthedocs.io/en/stable/lab/simulation_overview.html，官方search-index正文；只借鉴其simulation指标，未跑模拟。
+- RCQ Matters Arising：https://www.nature.com/articles/s41591-026-04638-6；原作者回复https://www.nature.com/articles/s41591-026-04637-7。直接open受限，Nature官方search-index提供主要文本；不据此声称完成全文逐段审查。
+
+3.3 blocked、未确认或不用于事实定论
+- https://www.openevidence.com/ direct open返回403，未完成账户内产品功能核验。
+- https://www.openevidence.foundation/blog/introducing-evidencegrade-grading-the-strength-of-medical-evidence-in-real-time 可读正文，但与.com的官方归属未由独立primary link核实。记录为待核线索，不当已确认官方事实。即使归属确认，其内容仍只是厂商GRADE-inspired方法描述而非正式GRADE或独立有效性证明。
+- https://www.nature.com/articles/s41586-025-10072-4（OpenScholar）与https://www.nature.com/articles/s41591-025-04151-2（MedHELM）直接open被Nature授权redirect阻断，分别用作者机构公告/官方项目/原始预印本限定描述。
+- 媒体、Reddit、Wikipedia、第三方独立榜单及同名仿站只曾作为检索发现线索；未作为23条landscape主要来源。
+- 产品宣传的规模、节省时间、accuracy、使用人数未纳入本项目真实性能结果；没有凭品牌名称推断模型架构、可访问全文或后台更新频率。
+
+4. 纳入与排除原则
+
+纳入：与临床证据问题问答、检索筛选、结构化提取、偏倚/确定性、跨研究综合、统计合成、指南决策或living evaluation相关；或者能提供可转用的benchmark治理规则。来源需为原始研究/作者官方repo、医疗方法机构官方文件、产品厂商自身功能文档。优先最近版本，保留原始日期与版本差异。
+
+排除出定论：纯媒体转述、社交平台口碑、第三方营销分数、无法确认归属的域名、未读取正文支持的细节推断、未复现的厂商准确率、与临床证据生产无关的普通LLM能力榜分。AI模型答案本身不是独立研究证据。原始论文的研究结果只在其明确任务、系统版本、语料、评审、运行设置和日期范围内描述。
+
+范围限制：检索没有系统覆盖全部语言、数据库、临床专科、工具、私有benchmark或付费文献；没有逐项核查所有前向/后向引用；没有完整去重后的文献flow count。因此不提供“检索全网XX篇”或检索召回率；source数量不是独立研究数量；不据本次研究作first/largest/only claim。
+
+5. 十项最近prior art的逐项比较与待验证差距
+
+下列“差距”是基于本次可读方法描述提出的研究定位假设，不表示已证明相应研究完全没有该功能。必须在正式投稿前逐篇全文、附录、最新代码与后续版本确认。Live、end-to-end、multi-dimensional、human-in-the-loop本身均已有先例，不能单独用来宣称创新。
+
+5.1 SciConBench
+已做：live benchmark，Cochrane问题，开放网络agent，clean-room阻断答案，atomic-fact precision/recall/F1，固定核心与滚动新题。
+新项目可研究：逐原始研究study family关联、逐结局效应量/CI复算、正式确定性理由、目标人群适用与对新增/撤稿事件的正确响应共同验证。
+关键验证：问“证据更新后系统是否正确改结论”与“benchmark加新题”是不同变量；不能仅把live dashboard换名就称创新。
+
+5.2 MedSR-Copilot / MedSR-Bench
+已做：PICOS驱动端到端检索、筛选、数值提取、RoB、合并效应与forest plots，可追溯中间记录及人类修改。
+新项目可研究：系统无关、开发者独立的前瞻多团队评价；适用不同产出类型；预注册critical gates、人工预算及跨时点公平性。
+关键验证：查统计方案、study overlap、GRADE/EtD、临床边界、外部数据与定期重测的真实覆盖；不能声称首个端到端SR benchmark。
+
+5.3 MedEvidence
+已做：给定相同底层文献，评价LLM能否匹配专家SR结论；检验不确定性、低质量证据和长上下文问题。
+新项目可研究：增加开放检索、原始数据复算、研究关联和证据随时间变化的评价；同参考结论存在合理分歧时的可接受范围。
+关键验证：系统合理保留不确定性应得高交付分；不能只追求复述参考答案。
+
+5.4 MedMeta
+已做：多个meta-analysis结论综合，parametric与RAG条件、golden/negated evidence以及人工验证的judge。
+新项目可研究：从原始研究数值到效应、CI、异质性和临床阈值的链条审计，明确“错误证据拒绝”与“真实异质证据”不同；长期事件响应与代表性。
+关键验证：不能把文本相似度当效应正确，也不能把新文献导致合理结论改变当不稳定错误。
+
+5.5 EviSearch v3
+已做：多agent临床trial evidence extraction、页级归因验证、分歧导向人工复核及反馈改进；offline开源权重运行。
+新项目可研究：同等人工分钟/资格下的成本质量曲线，错误严重程度及进入合并分析后的传播；将cell-level准确与全task可靠区分。
+关键验证：引用页上确有该值不等于组别、单位、分母、时间窗和推断都正确；不能用attribution coverage替代正确率。
+
+5.6 KSR
+已做：多种来源与筛选/提取/分析/综合的任务分解、人机协作路由、专家验证；指出没有全能赢家。
+新项目可研究：医学公认工具、临床效应与推荐决策、患者重要结局及原始证据稀缺场景的公平评价。
+关键验证：KSR非临床；不能移用其任务准确率或阈值作医疗合格标准。
+
+5.7 OpenScholar / ScholarQABench
+已做：多学科科学检索与多文献长文综合，事实正确性和citation quality，公开模型/检索资源/代码。
+新项目可研究：将citation correctness进一步链接到研究设计、独立人群、效应量、确定性和患者决策；按临床证据cell验证。
+关键验证：科学长文质量不等于SR方法学质量或指南推荐可靠；biomedicine覆盖不代表全球人群覆盖。
+
+5.8 MedHELM
+已做：从临床工作任务建立taxonomy，多benchmark、多维医疗任务，公开/私有/受限集和专家校准LLM jury。
+新项目可研究：围绕证据生产链的纵向关联、efficacy estimate、GRADE/EtD理由与living事件；较窄但更深的证据完整性测量。
+关键验证：平均win rate依赖对手与suite；新项目应保留绝对指标、分母、错误级别与置信区间，不只换一种总分。
+
+5.9 RCQ与Real-POCQi（两种真实临床问句研究作为一个对照组）
+已做：真实临床问句、随机盲评、多位临床医生、多个评价维度；两项研究在不同版本、问题分布、生成条件和商业参与下报告不同方向结论。
+新项目可研究：独立多来源临床query、标准化可审计harness、适当聚类统计、预注册生成设置、按需引用/全文预算公平比较、持续版本档案。
+关键验证：不得据某个题库宣称普遍赢家；公共题污染、judge affinity、版本差异和评审来源要作为敏感性分析。临床问答不替代完整证据综合审计。
+
+5.10 Cochrane 2026平台研究
+已做：面向screening/extraction的独立、前瞻、可复现平台设计，dual-human标准、性能与不确定性阈值、允许增删工具。
+新项目可研究：将方法学规范拓展到快速临床回答、完整统计证据包、指南EtD、时点响应和目标人群适用校准的统一但分赛道验证。
+关键验证：平台研究公告不是完成结果；同为platform不构成创新；必须证明新增维度可重复测量、有临床意义且不受资料丰富度混淆。
+
+6. 独立检查root初版配置的建议（只读检查时点：2026-10-29）
+
+已阅读：data/benchmark-config.json、data/evaluation-template.json、tools/scorer.js；未编辑这些文件。
+
+6.1 需优先修正或明确的技术入榜限制
+- 探索权重：evaluate支持weightsOverride并标exploratory_weights，但原代码仍可eligible=true。探索性权重不应进入冻结正式榜；建议强制eligible=false或另加weights_match_frozen_profile检查。
+- 不完整扩展赛道：T4/T5说明是扩展或未实现量表，但原scorer只检查赛道ID存在，可据填满分数进入技术资格。建议配置implemented与eligible_for_leaderboard，正式榜拒绝未实现模块。
+- run_mode：模板给fixed_corpus，但配置用中文展示名列表，原scorer未验证run_mode。建议稳定枚举ID与显示名分离，禁止混榜。
+- 评分依据：目前仅scores、gates与三个boolean就能获得技术入榜；claims、metric_observations、reviewers等可全空。建议明确这是演示计算器，真实入榜必须由外部协议审计签名；或加入冻结profile/reference/rubric IDs、逐维观测、评审和仲裁记录的结构验证。
+- 权重完整但缺全量suite分母：单record符合条件不代表系统完成全部指定题集；应在系统级报告里强制manifest、planned n、attempted n、failed n与coverage，不可只提交成功个案。
+
+6.2 评价设计盲点及建议
+- 静态与living资格：所有10维均为必需时，单次静态任务没有事件的D7按规则是未测，不能产生full Q。这个逻辑本身透明，但应明确“完整纵向榜”与“静态诊断profile”的不同；若要静态榜，需事前冻结独立评分profile及权重，禁止现场按NA重分配。
+- 任务级行为锚点还不够：D1/D2等率指标、各子指标、0/25/50/75/100锚点如何转成每个维度需预定。否则不同评审给同一数字的含义不同。建议每赛道/任务冻结scoring manual，不只预留一句未来冻结。
+- 基线证据与系统表现：配置已正确区分，建议继续在数据里强制source_evidence_profile与delivery_score分开。需要“弱证据、正确保留不确定性”与“强证据、错报确定性”两个对照任务检查不会奖励高GRADE。
+- 临床效应误差容差：D4需为每个effect cell预设尺度与容差（如log ratio、absolute risk、MCID类别），区分计算错误、合理模型选择与参考错误。不能统一要求精确复制单一合并模型。
+- 参考答案争议：reference_adjudicated为布尔值过粗。需reference version、专家组/COI、允许方法范围、证据日期、争议/更正机制，引用不可取得时不能默认错。
+- 聚类与外推：要按topic_root/study family/task聚类；同一RCT、综述更新、多个outcome、同题多问法和多judge不是独立n。公开榜分应同时有题集与目标总体的适用限制。
+- 人类预算：human_minutes不足以描述人机协作；至少记录专家/助理资格、培训、盲法、是否看AI建议、复核比例、返工和仲裁时间，避免高质量由更多专家投入造成但记为模型优势。
+- 更新事件：模板需区分publication/index availability/retrievable time/detected/screened/integrated/decision corrected；记录不可访问、未触发、未处理、右删失。更新SLA以哪个起点计时必须冻结。
+- 稳定性：D8将重复运行、无关扰动、敏感性完整度与应变性放在同维可行，但必须分别保留观测；系统重复输出错误结论不能获高正确性分；正确承认borderline不确定性不是失败。
+- 过度拒答与遗漏：不确定时拒答可正确，但不能因少说而降低claim分母赢得precision。保留预设关键claim recall、对不答/失败的任务分母和selective risk/coverage曲线。
+- 对抗与注入：开放检索需要专门记录恶意PDF/网页指令、隐藏答案、伪造DOI、更新后的撤稿/勘误；引用内容是证据材料，不是可执行评测规则。
+- 代表性：底层研究无法按族裔/孕哺全覆盖时，评价系统是否披露缺口；代表性需对特定目标人群而非全球熵值越高越好。不要由国家、姓名或语言推断族裔。
+- 指南委员会的过程：AGREE/RIGHT/EtD不只文本特征；没有真实患者参与、COI管理、外审和共识记录，不能由模型写出相似段落取得同等过程分。指南证据包与正式指南明确不同。
+- 总分与安全门槛：全通过不等于证明风险为0。即使0重大错误，也应报告n与单侧上界；多个置信区间和rank tie处理需预定。安全事件不能用高其他轴补偿。
+- 变更审计：更改题库、rubric、权重、judge、证据来源或参考答案后，保留旧结果身份，必要时做anchor re-evaluation；不能把旧模型新题与新模型旧题直接排名。
+
+7. 本记录的使用边界
+
+此文件支持研究设计与可审查初版，不构成正式系统综述、医疗共识、认证或真实模型排行榜。prior-art差距需要后续专家全文核查与实测验证；新指标及复合权重仍是提案。所有公开结论应保留“截至2026-10-29、已访问来源范围内”的限定。

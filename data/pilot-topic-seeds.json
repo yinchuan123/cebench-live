@@ -1,0 +1,360 @@
+{
+  "schema_version": "0.1.0",
+  "as_of": "2026-10-29",
+  "purpose": "Twelve initial topic-root specifications for pilot planning. Not clinical recommendations, benchmark runs, or reference answers.",
+  "number_of_topic_roots": 12,
+  "independent_sample_size_status": "12 proposed topic roots; zero adjudicated cases; variants are dependent and cannot increase n.",
+  "tracks_status": "T1/T2/T3 are potential task variants, not separate independent topics; domain-specific methods must be frozen before evaluation.",
+  "challenge_assignment_note": "Retraction, uncertain/null evidence and update challenges require source verification and expert adjudication; synthetic challenge records must be visibly labelled and kept outside real clinical performance claims.",
+  "topics": [
+    {
+      "stable_id": "CEB-TOP-001",
+      "specialty": "心血管／老年医学",
+      "scope": "房颤相关卒中预防证据：高龄、多病共存、肾功能受损人群中的收益与出血风险。",
+      "challenge": "同一研究的主要论文、亚组和延长随访重复；不同随访风险不能直接合并；研究目标人群与临床目标人群不一致。",
+      "tags": [
+        "source_identity",
+        "age_comorbidity_coverage",
+        "benefits_and_harms",
+        "absolute_risk"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "预设目标人群、比较、卒中/系统性栓塞/严重出血等结局及时间窗。",
+        "核验真实试验/队列注册和报告关联；对同一人群各分析结果建立共同study_id。",
+        "绝对效应参考风险的来源、时间窗和适用人群须独立审定；不要凭相对效应推断临床建议。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-002",
+      "specialty": "肿瘤／诊断影像",
+      "scope": "乳腺筛查某种检测策略的诊断准确性与患者重要结局证据包。",
+      "challenge": "敏感度/特异度与死亡率/过度诊断结局混淆；阈值、参照标准、筛查与诊断人群不一致。",
+      "tags": [
+        "diagnostic_accuracy",
+        "thresholds",
+        "overdiagnosis",
+        "patient_important_outcomes"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "冻结QUADAS-3版本及每个estimate的综合问题、检测阈值、参照标准和受试者路径。",
+        "诊断准确性证据与改变临床结局的干预证据分层；不把更高检出率直接当生存获益。",
+        "如合成准确性，采用适用的双变量/HSROC等预设模型并由统计学审阅者建立可接受分析范围。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-003",
+      "specialty": "感染病／疫苗",
+      "scope": "呼吸道感染疫苗或预防干预在不同时段和人群中的证据更新。",
+      "challenge": "变异株/流行时期、既往免疫与感染风险变化；混用感染、重症和死亡；新增证据应改变某结论而保留其他结论。",
+      "tags": [
+        "temporal_shift",
+        "living_update",
+        "outcome_separation",
+        "geography"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "按检索可得日期、发表日期和研究期分别建时间线，选择经核验的真实来源后才能正式出题。",
+        "预注册病例回放时间t0与t1，明确当时可得材料；未来材料放在评估方隐藏集。",
+        "独立审定新增事件是否达到更新触发条件，允许有依据的no-change，而非强迫所有结论改变。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-004",
+      "specialty": "产科／妇幼健康",
+      "scope": "妊娠期某预防干预对母体及胎儿重要结局的证据包。",
+      "challenge": "成人非孕人群外推孕期；孕周、基线风险、胎儿和母体结局混用；罕见伤害与不充分报告。",
+      "tags": [
+        "pregnancy",
+        "maternal_fetal_harms",
+        "rare_events",
+        "indirectness"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "妇产科临床专家预设孕周、目标风险人群、母体和胎儿结局、分娩/产后时间窗。",
+        "未报告不作为零事件；母体与胎儿分母、重复妊娠/双胎相关性需记录。",
+        "引用稀疏或低确定性证据时，参考答案可为证据不足并给适用限制；不预设推荐方向。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-005",
+      "specialty": "儿科／基层医疗",
+      "scope": "儿童常见症状相关检测或管理策略的证据简报。",
+      "challenge": "成人数据冒充儿童直接证据；年龄段与疾病严重度异质；证据不足与无效的区分。",
+      "tags": [
+        "pediatric_coverage",
+        "evidence_absence",
+        "age_strata",
+        "scope"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "儿科专家定义年龄分层、严重程度、就诊场景及排除红旗病例的题目边界。",
+        "分别标注直接儿童研究、可接受间接证据和不可外推证据。",
+        "参考答案允许无法量化/不宜合并，不用缺乏统计显著性强制判无效。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-006",
+      "specialty": "精神心理／网络Meta分析",
+      "scope": "抑郁相关干预的多种比较及患者重要结局证据网络。",
+      "challenge": "多臂试验共享对照、网络不连通、传递性/一致性不满足、只看排名而忽视不确定性。",
+      "tags": [
+        "NMA",
+        "shared_controls",
+        "transitivity",
+        "ranking_uncertainty"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "先冻结干预节点、剂量/组合策略、结局与时间窗，确定哪些直接和间接比较可合成。",
+        "登记多臂相关性与重复报告；网络连通分量不能强行桥接。",
+        "NMA专家建立可接受模型与敏感性范围；使用适用网络偏倚/确定性工具。",
+        "参考可接受结论包括拒绝给唯一最佳排名；SUCRA/P-score不作为实际疗效大小。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-007",
+      "specialty": "神经内科／认知障碍",
+      "scope": "认知障碍某治疗的功能、生活质量、量表及严重不良事件证据。",
+      "challenge": "统计显著量表变化与患者可感知获益不一致；富集选择试验外推；治疗负担和伤害漏报。",
+      "tags": [
+        "clinical_importance",
+        "surrogate_outcomes",
+        "enrichment",
+        "harms"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "预先选择重要功能/生活质量结局与量表结局并区分二者，MID阈值须有可核验来源。",
+        "建立诊断条件、入组富集条件、照护场景与目标人群适用性表。",
+        "绝对收益和伤害必须带时间、基线风险、分母和确定性；不预定正负推荐。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-008",
+      "specialty": "内分泌／代谢与肥胖",
+      "scope": "体重管理干预的短期体重指标、长期健康结局及停药/停止干预后的证据。",
+      "challenge": "替代结局当长期患者获益；失访、停药和不同estimand混淆；观察性与随机证据被混合。",
+      "tags": [
+        "estimand",
+        "followup",
+        "attrition",
+        "surrogate_outcomes"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "把ITT/treatment-policy与on-treatment/per-protocol等结果明确分开并链接同一试验。",
+        "冻结短中长期时间窗与体重、心代谢事件、生活质量和不良事件各分析单元。",
+        "RCT和非随机结果分别使用适用偏倚工具和预设综合路径，不因效应方向相同机械合并。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-009",
+      "specialty": "骨骼肌肉／康复医学",
+      "scope": "运动或康复干预对疼痛、功能与跌倒等结局的证据。",
+      "challenge": "变化值与末次值、SD与SE、量表高低方向错误；同队列多个时间点/量表反复计入；小研究影响。",
+      "tags": [
+        "extraction_units",
+        "scale_direction",
+        "dependent_effects",
+        "influence_analysis"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "逐格核验原文数值、量表方向、单位及变化值/末次值，保留原始和标准化字段。",
+        "每个分析单元预选结局/时间点或采用合理相关性处理，不能把效应行数当研究数。",
+        "预先定义leave-one-study-out及高偏倚排除敏感性；稳定性作为结果特征，不等于真。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-010",
+      "specialty": "营养／公众健康传播",
+      "scope": "营养补充或饮食相关健康主张的因果证据与公众沟通。",
+      "challenge": "关联当因果；健康人群与缺乏/疾病人群混淆；阴性/不确定证据被宣传性语言夸大。",
+      "tags": [
+        "negative_or_uncertain",
+        "causal_claims",
+        "baseline_status",
+        "communication"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "营养/公共卫生专家预先定义暴露或干预、基线状态、比较与患者重要结局。",
+        "纳入至少一个经独立审定的无明显获益或证据不确定问题，但在完整参考建成前不指定答案方向。",
+        "若用合成教学材料构造阴性事件，明确synthetic并隔离正式临床榜；公众表述需目标使用者评阅。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-011",
+      "specialty": "环境健康／流行病学",
+      "scope": "环境或职业暴露与长期健康结局的观察性证据。",
+      "challenge": "同一大型队列不同论文的重叠；残余混杂、暴露测量误差、选择偏倚；地理族群代表性。",
+      "tags": [
+        "cohort_overlap",
+        "ROBINS_E",
+        "confounding",
+        "population_transport"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "绘制队列—论文—结局—随访时间图并核验重叠程度；无法确定时保留unknown。",
+        "按适用ROBINS-E版本审定具体因果效应结果；association与causal effect分开。",
+        "目标人群分布须采用可核查外部来源；国别不能代替族裔或遗传祖源。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    },
+    {
+      "stable_id": "CEB-TOP-012",
+      "specialty": "女性健康／性健康",
+      "scope": "女性性健康干预的症状、困扰、生活质量与安全性证据包。",
+      "challenge": "量表改进替代患者重要困扰改善；绝经/产后/肿瘤等人群混用；撤稿或更正使综合结论需重新评估。",
+      "tags": [
+        "patient_important_outcomes",
+        "population_mix",
+        "retraction_update",
+        "reporting_bias"
+      ],
+      "deliverables": {
+        "T1": "同一topic-root下的临床证据问答/快速简报：关键可核验主张、收益/伤害、适用限制与来源定位；不要求新做完整SR。",
+        "T2": "同一topic-root下的研究关联、提取表、适用偏倚判断、预设综合或不合并理由、逐重要结局确定性；另设冻结/开放/时间回放变体。",
+        "T3": "在同一证据包基础上提交EtD与推荐理由草案，明确价值偏好、资源、公平、可接受性和可行性；委员会与患者参与须真实记录，不能由生成文字冒充。"
+      },
+      "reference_build_requirements": [
+        "按目标人群和结局分别定义分析单元；量表和患者重要结局分开。",
+        "对撤稿/更正挑战先核验真实事件、事件时间、受影响结果及审定处置；未核验时只可用明确标记的合成撤稿事件，不能编造真实论文撤稿。",
+        "在t0/t1建立独立参考、效应复算与确定性/推荐变化允许范围；正确修正与无依据固守分别评价。",
+        "两名训练合格评审独立建立/复核参考；分歧由第三位具临床/方法专长的评审仲裁，保留理由及可接受答案范围。",
+        "冻结PICO/PICOTS、来源可得截止、语料清单和hash、报告到研究映射、分析计划、误差容差和临床重要性判据。",
+        "题目原文、同义改写、T1/T2/T3、多个outcome/timepoint、重复运行与更新切片共享本topic-root；交叉验证按root分割，统计不当作独立n。",
+        "题目种子不构成参考标准、真实临床答案或已评测病例；正式纳入前完成可得全文、许可、泄漏风险和参考完整度核验。"
+      ],
+      "synthetic_or_unadjudicated": true,
+      "status": "case_specification_only_no_adjudicated_reference",
+      "eligible_for_leaderboard": false
+    }
+  ]
+}

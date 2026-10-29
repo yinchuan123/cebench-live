@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "如使用本软件或框架，请引用本仓库并注明具体版本与方法状态。"
+title: "CEBench-Live: 临床与健康证据评价框架与研究工具"
+version: 1.0.0
+date-released: 2026-10-30
+type: software
+authors:
+  - name: "CEBench-Live contributors"
+abstract: "Public software and framework release. Method protocol 0.2.1 remains a planning framework; the legacy 0.1.0 calculator uses unvalidated trial weights. No adjudicated benchmark cases, actual system comparison or official leaderboard is claimed."
+keywords:
+  - clinical evidence
+  - evaluation
+  - benchmark framework
+  - evidence synthesis
+

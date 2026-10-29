@@ -1,0 +1,45 @@
+{
+  "as_of": "2026-10-29",
+  "status": "framework_and_roadmap_only_not_validated_benchmark",
+  "deliverables": [
+    "临床与健康证据Benchmark框架与路线图.md",
+    "benchmark-blueprint-v0.2.json",
+    "task-contract-template-v0.2.json"
+  ],
+  "verification": {
+    "plan_and_blueprint_consistent": true,
+    "json_parse": true,
+    "dimensions": 12,
+    "tracks": 7,
+    "evidence_modules": 17,
+    "formal_ranking_disabled": true,
+    "independent_method_review": "completed with three corrections incorporated",
+    "visual_preview_widths": [
+      320,
+      736
+    ],
+    "visual_console_errors": 0,
+    "visual_primary_interaction": "phase selection updates active bar and acceptance detail",
+    "service_design_independent_review": "completed; scope, timing, fairness and staged rollout incorporated"
+  },
+  "research_notes": [
+    "../../research/standards_verified_20261029.md",
+    "../../research/landscape_verified_20261029.md",
+    "../../research/methods_personalization_20261029.md"
+  ],
+  "next_required_for_real_comparison": [
+    "frozen_rubric",
+    "adjudicated_reference_tasks",
+    "actual_system_runs",
+    "independent_review",
+    "statistical_protocol"
+  ],
+  "clinical_or_product_performance_evaluated": false,
+  "background_automation_created": false,
+  "plan_version": "0.2.1-planning",
+  "service_design_added": true,
+  "service_live": false,
+  "response_targets_validated": false,
+  "paid_service_or_pricing_launched": false,
+  "service_direction_user_confirmed": true
+}

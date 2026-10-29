@@ -1,0 +1,75 @@
+CEBench-Live 临床与健康证据交付基准
+阅读入口更新：2026-10-29。内容方案0.3；方法规划0.2.1；旧版计算草案0.1.0。
+
+1. 从这里阅读
+   离线阅读版：outputs/v0.3/CEBench-Live用户与商业说明.html
+   可切换对外介绍与完整方案，完整方案含目录。
+   首次了解项目：outputs/v0.3/临床证据Benchmark对外介绍.md
+   用户与商业方案：outputs/v0.3/临床证据Benchmark用户价值与商业方案.md
+   两份内容说明谁使用、解决什么决定、拿到什么、怎样收费和验证价值。
+   客群、需求、价格、续费和服务时限仍需试点验证。
+
+   方法与路线图：outputs/v0.2/临床与健康证据Benchmark框架与路线图.md
+   十二维、七赛道及即时初评与付费深评的规划；含方法蓝图和空白任务合同。
+   当前没有人工审定题库、真实系统比较或正式排行榜。
+
+   旧版计算演示：outputs/v0.1/CEBench-Live-v0.1.html
+   十维草案报告，含来源台账、指标目录与评分计算器。
+   其算术和界面演示不代表十二维新框架已实现或获验证。
+   页面可打印或另存PDF；本包没有自动生成PDF。
+
+2. 旧版计算草案完成了什么
+   10个维度、26项子指标、Core-Q与Live-Q两个预设profile；
+   76条来源记录（73个不同网址），含读取方式和局限；
+   12个未审定题根规格，不是12个已完成测试病例；
+   空白评价模板、原始指标计算、维度/总分计算与检查。
+   所有新增权重和量表均待验证；没有真实产品运行、正式排行榜或医学安全认证。
+   原始指标引擎统一要求第三人签署，是本版提出的严格执行规则。
+
+3. 更新内容
+   data/benchmark-config.json          维度、赛道、门槛和两套预设权重
+   data/metric-catalog.json            子指标、分母、变换、锚点和缺失规则
+   data/evaluation-template.json      维度级评价空白模板
+   data/raw-metric-template.json      原始指标观测模板（含人工评审凭据）
+   data/pilot-topic-seeds.json         建题规格
+   research/*.json                    原始研究与官方来源台账
+   research/search-audit.txt           检索范围、读取状态和prior art边界
+   outputs/v0.1/measurement-handbook.txt 计分和字段手册
+   tools/report-body.html              中文方案正文
+
+   修改后：python3 tools/build.py
+   修改v0.3内容后：node tools/build-content.cjs
+   两个构建入口分别生成旧版计算演示与新版内容阅读页。
+   构建只读取本地文件，不会上网抓取，也不会自动验证医学事实。
+   规则、题库与受评系统分别版本化，新增来源须实际核查并保留旧版。
+   本包没有创建任何自动任务。建议的月度/季度维护频率只是协议建议。
+
+4. 评价记录
+   可在报告计算器中导入/保存JSON；页面修改不会直接覆盖硬盘源文件。
+   也可运行：node tools/evaluate-record.js data/evaluation-template.json
+   原始子指标：node tools/score-metrics.js data/raw-metric-template.json
+   计算结果的scores可接维度模板；原始观测另行保留，不能丢掉来源凭据。
+   若用原始指标计算，不得把漏交、未测、0分和不适用混淆。
+   真实评审须保留所有被分配任务、错误、拒答和超时，不能挑选成功结果。
+   配对质量增益：python3 tools/paired-effect.py 已审定配对题根.json
+   该工具只输出题根宏平均差和题根抽样区间，不替代多层评审模型或功效论证。
+   输入格式见tools/paired-effect.py开头；没有真实配对数据时不能运行出实际增益。
+
+5. 重建与核查
+   python3 tools/build.py
+   node tests/scorer.test.js
+   node tests/metric-engine.test.js
+   node tools/qa-report.js（需安装Playwright；本次使用宿主预装运行环境）
+   UI核查记录在outputs/v0.1/qa/，仅验证显示和算术，不证明医学效度。
+
+6. 正式benchmark仍需完成
+   独立参考包、双评审和仲裁、内容/测量学效度、外部验证、样本量模拟、
+   真实系统比较、前瞻Live面板、独立治理与利益冲突管理。
+   草案代码的字段通过不等于来源真实、审定完成或正式入榜。
+   GRADE、RoB、AGREE等原生判断保留，不能被Q取代。
+
+重要解释
+   Q是证据交付质量，不是证据确定性或临床治疗效应。
+   低确定性的证据被如实报告，可以是高质量交付。
+   Live看是否及时改对；稳定度不能奖励一直不变；覆盖不足须如实说明。
+   临床效应仅在兼容PICO×结局×时间×设计中报告，不跨疾病盲目池化。

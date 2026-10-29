@@ -1,0 +1,38 @@
+{
+  "name": "cebench-live",
+  "version": "1.0.0",
+  "private": true,
+  "description": "CEBench-Live public evidence evaluation framework, research tools and preliminary review interface",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "test": "node tests/scorer.test.js && node tests/metric-engine.test.js && node tests/intake.test.js && python3 -m unittest discover -s tests -p 'test_*.py' && node --test tests/benchmark-server.test.mjs",
+    "build:reports": "python3 tools/build.py && node tools/build-content.cjs",
+    "build:release": "node tools/build-release.mjs",
+    "build:intake": "node tools/prepare-ocr.mjs && vite build --config intake/vite.config.mjs",
+    "build": "npm run build:reports && npm run build:intake && npm run build:release",
+    "package:release": "python3 tools/package-release.py",
+    "qa:report": "node tools/qa-report.js",
+    "prepare:ocr": "node tools/prepare-ocr.mjs",
+    "test:server": "node --test tests/benchmark-server.test.mjs",
+    "preview": "vite preview --config intake/vite.config.mjs --host 127.0.0.1"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "fflate": "0.8.3",
+    "mammoth": "1.13.0",
+    "pdfjs-dist": "6.4.299",
+    "tesseract.js": "7.0.0"
+  },
+  "devDependencies": {
+    "marked": "16.4.2",
+    "playwright": "1.64.1",
+    "vite": "8.3.5"
+  },
+  "overrides": {
+    "exceljs": {
+      "uuid": "11.1.1"
+    }
+  }
+}

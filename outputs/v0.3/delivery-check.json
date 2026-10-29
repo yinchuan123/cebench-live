@@ -1,0 +1,73 @@
+{
+  "as_of": "2026-10-29",
+  "content_version": "0.3",
+  "record_type": "content_and_reader_verification_only",
+  "status": "draft_product_and_business_plan_not_validated_service",
+  "source_method_version": "0.2.1-planning",
+  "verification": {
+    "viewport_checks": [
+      {
+        "view": "intro",
+        "width": 320,
+        "scroll": 320
+      },
+      {
+        "view": "full",
+        "width": 320,
+        "scroll": 320
+      },
+      {
+        "view": "intro",
+        "width": 736,
+        "scroll": 736
+      },
+      {
+        "view": "full",
+        "width": 736,
+        "scroll": 736
+      },
+      {
+        "view": "intro",
+        "width": 1440,
+        "scroll": 1440
+      },
+      {
+        "view": "full",
+        "width": 1440,
+        "scroll": 1440
+      }
+    ],
+    "page_errors": [],
+    "internal_links": [],
+    "main_sections": 16,
+    "local_links": [
+      "./临床证据Benchmark对外介绍.md",
+      "../v0.2/临床与健康证据Benchmark框架与路线图.md",
+      "../v0.2/benchmark-blueprint-v0.2.json",
+      "../v0.1/CEBench-Live-v0.1.html"
+    ],
+    "reading_mode_switch": true,
+    "document_title_precedes_contents": true
+  },
+  "limits": [
+    "No customer interviews or paid trials performed",
+    "No model or clinical performance evaluated",
+    "Commercial hypotheses and response times remain unvalidated",
+    "Scoring rules and prior method sources unchanged"
+  ],
+  "editorial_review": "Two agent reviews; wording corrections incorporated; no human clinical adjudication",
+  "files": {
+    "临床证据Benchmark对外介绍.md": {
+      "bytes": 3468,
+      "sha256": "3053ac46070b143547ffba9fde0bf52725491bcb5d7227dfa963d9df172c97c0"
+    },
+    "临床证据Benchmark用户价值与商业方案.md": {
+      "bytes": 24083,
+      "sha256": "3009cc09cc5aa5c8e0d1dd12c64812faed26817793938e20be8b6efc7cd3501f"
+    },
+    "CEBench-Live用户与商业说明.html": {
+      "bytes": 35546,
+      "sha256": "c44ed307834206de33ff1e8ca64919d6f81bb02c617971e310a0adad772e4b7f"
+    }
+  }
+}

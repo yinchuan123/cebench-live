@@ -1,0 +1,507 @@
+{
+  "verified_date": "2026-10-29",
+  "scope": "Official and original methodological sources for clinical evidence-output benchmark design. Research package, not instrument validation.",
+  "sources": [
+    {
+      "id": "CS01",
+      "title": "GRADE Working Group: minimal requirements (updated 2023-05)",
+      "url": "https://www.gradeworkinggroup.org/",
+      "verified_date": "2026-10-29",
+      "claim": "Certainty is judged for each critical or important outcome; benefits and harms, each relevant GRADE domain, evidence profiles and explicit EtD judgments underpin claims of GRADE use. Recommendations separate direction and strength.",
+      "scope": "Body of evidence per important outcome; decisions/recommendations use additional EtD criteria.",
+      "caveat": "GRADE categories are ordinal judgments, not interval numbers; avoid modified GRADE or numerical averaging into a new certainty score.",
+      "verification": "direct_open"
+    },
+    {
+      "id": "CS02",
+      "title": "Cochrane Handbook Chapter 14: Summary of findings and GRADE",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14",
+      "verified_date": "2026-10-29",
+      "claim": "GRADE uses four certainty categories and considers risk of bias, inconsistency, indirectness, imprecision and publication bias. SoF tables combine effect magnitude, data quantity and certainty.",
+      "scope": "Outcome-specific synthesis across contributing studies.",
+      "caveat": "Correctly reporting very-low-certainty evidence is good output quality; a model must not be rewarded merely for choosing high-certainty topics.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS03",
+      "title": "AGREE II user manual and 23-item instrument",
+      "url": "https://www.agreetrust.org/wp-content/uploads/2013/06/AGREE_II_Users_Manual_and_23-item_Instrument_ENGLISH.pdf",
+      "verified_date": "2026-10-29",
+      "claim": "AGREE II contains 23 items across six domains plus two global ratings. At least two and preferably four appraisers are recommended. The consortium sets no universal minimum domain-score threshold.",
+      "scope": "Methodological development quality and reporting of a guideline document.",
+      "caveat": "Domain scores should remain distinct. A benchmark pass threshold is a new protocol choice, not an AGREE-endorsed cutoff; an answer-only product cannot be treated as a complete guideline.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS04",
+      "title": "RIGHT Statement official website",
+      "url": "https://www.right-statement.org/",
+      "verified_date": "2026-10-29",
+      "claim": "RIGHT describes 22 essential reporting items spanning guideline information, background, evidence, recommendations, review, funding/interests and other information.",
+      "scope": "Reporting of healthcare practice guidelines.",
+      "caveat": "The official site states RIGHT is not a quality-assessment instrument for guideline quality; completeness does not establish clinical correctness.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS05",
+      "title": "AMSTAR 2 original instrument paper",
+      "url": "https://www.bmj.com/content/358/bmj.j4008",
+      "verified_date": "2026-10-29",
+      "claim": "AMSTAR 2 assesses systematic reviews including randomized or nonrandomized intervention studies using 16 items and critical-domain weaknesses. Authors explicitly reject deriving an overall numerical score.",
+      "scope": "Methodological appraisal of a completed systematic review of healthcare interventions.",
+      "caveat": "Store original High/Moderate/Low/Critically low judgments, with rationale and critical flaws. Do not call item percentages an AMSTAR2 total or apply it to an isolated short clinical answer.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS06",
+      "title": "ROBIS official resources, University of Bristol",
+      "url": "https://www.bristol.ac.uk/population-health-sciences/projects/robis/",
+      "verified_date": "2026-10-29",
+      "claim": "ROBIS assesses risk of bias in systematic reviews, distinct from risk of bias in primary studies.",
+      "scope": "Systematic-review processes and conclusions.",
+      "caveat": "Keep eligibility/relevance and review-level bias judgments separate from source-study bias; neither a citation count nor reporting completeness substitutes for ROBIS.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS07",
+      "title": "RoB 2 original paper",
+      "url": "https://www.bmj.com/content/366/bmj.l4898",
+      "verified_date": "2026-10-29",
+      "claim": "RoB2 assesses a specific intervention-effect estimate for a particular outcome, endpoint and estimand in a randomized trial.",
+      "scope": "A single numerical result, not a whole paper/trial uniformly.",
+      "caveat": "Timepoint, outcome, ITT/per-protocol and design variants matter. Do not assign one whole-trial score mechanically to all results.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS08",
+      "title": "Cochrane: About risk of bias 2",
+      "url": "https://www.cochrane.org/es/learn/courses-and-resources/cochrane-methodology/risk-bias/about-risk-bias-2-rob-2",
+      "verified_date": "2026-10-29",
+      "claim": "Cochrane clarifies the result-level nature of RoB2 and recommends concentrating assessments on key outcomes/comparisons used in SoF tables.",
+      "scope": "Quantitative results contributing to meta-analysis or synthesis without meta-analysis.",
+      "caveat": "A benchmark wanting exhaustive claim review still needs to predefine which results require formal RoB2 and resource the assessment.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS09",
+      "title": "ROBINS-I V2 official tool page",
+      "url": "https://www.riskofbias.info/welcome/robins-i-v2",
+      "verified_date": "2026-10-29",
+      "claim": "The official page identifies a revised ROBINS-I V2 dated 20 November 2025, still a draft subject to change, for specific intervention results in follow-up/cohort studies.",
+      "scope": "Nonrandomized intervention result; current V2 follow-up/cohort scope.",
+      "caveat": "Freeze tool version and document date; do not silently mix 2016, Nov2024 and Nov2025 judgments. Website states CC BY-NC-ND 4.0 for RoB2, ROBINS-I, ROBINS-E and ROB-ME; preserve originals and review intended licensing.",
+      "verification": "direct_open"
+    },
+    {
+      "id": "CS10",
+      "title": "PRISMA 2020 official statement",
+      "url": "https://www.prisma-statement.org/prisma-2020",
+      "verified_date": "2026-10-29",
+      "claim": "PRISMA2020 provides reporting checklists and flow templates for original and updated systematic reviews.",
+      "scope": "Completeness and transparency of systematic-review reporting.",
+      "caveat": "Reporting guidance is not a conduct or methodological-quality appraisal; keep PRISMA adherence separate from AMSTAR2/ROBIS.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS11",
+      "title": "PRISMA 2020 original statement paper",
+      "url": "https://www.bmj.com/content/372/bmj.n71",
+      "verified_date": "2026-10-29",
+      "claim": "The statement explicitly says PRISMA2020 should not assess review conduct or methodological quality.",
+      "scope": "Systematic review reporting.",
+      "caveat": "Do not equate a complete checklist with trustworthy estimates.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS12",
+      "title": "PRISMA-Search / PRISMA-S official page",
+      "url": "https://www.prisma-statement.org/prisma-search",
+      "verified_date": "2026-10-29",
+      "claim": "The searching extension published in 2021 contains 16 reporting items, including reproducible search documentation.",
+      "scope": "Search reporting in systematic reviews.",
+      "caveat": "A reported query/date is auditable transparency, not empirical proof of recall; benchmark retrieval against an adjudicated eligible corpus.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS13",
+      "title": "WHO handbook for guideline development, 2nd edition",
+      "url": "https://www.who.int/publications/i/item/9789241548960",
+      "verified_date": "2026-10-29",
+      "claim": "WHO supplies a stepwise process for planning, developing and publishing guidelines, with supplementary chapters on decisions, tests and complexity.",
+      "scope": "Guideline governance and development workflow.",
+      "caveat": "A generated recommendation is not a WHO-style guideline without the requisite panel, evidence review, conflict management and contextual judgments. The 2014 publication date must remain visible.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS14",
+      "title": "NICE guideline manual, introduction",
+      "url": "https://www.nice.org.uk/process/pmg20/chapter/introduction",
+      "verified_date": "2026-10-29",
+      "claim": "NICE manual shown as updated 23 October 2025 covers development, maintenance and updating, including evidence reviews, economics, committee recommendations and independent quality assurance.",
+      "scope": "Clinical care, public health and social-care guidelines.",
+      "caveat": "NICE recommendations include context and value judgments; agreement with one guideline is not a universal clinical truth label across regions.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS15",
+      "title": "NICE manual Chapter 6, reviewing evidence",
+      "url": "https://www.nice.org.uk/process/pmg20/chapter/reviewing-evidence",
+      "verified_date": "2026-10-29",
+      "claim": "NICE describes eight review steps: protocol, identification/selection, appraisal, extraction, synthesis, certainty assessment, interpretation and health inequalities.",
+      "scope": "Guideline-supporting evidence reviews.",
+      "caveat": "Review evidence summaries should be distinct from committee interpretation; record deviations and justified reuse of prior review material.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS16",
+      "title": "NICE manual Chapter 9, interpreting evidence",
+      "url": "https://www.nice.org.uk/process/pmg20/chapter/interpreting-the-evidence-and-writing-the-guideline",
+      "verified_date": "2026-10-29",
+      "claim": "Recommendations take account of benefits/harms, certainty, preferences, economics, feasibility and equality; evidence requires interpretation.",
+      "scope": "Recommendation formulation and contextualization.",
+      "caveat": "A stronger effect or higher certainty alone does not determine a recommendation. Distinguish evidence agreement from judgment agreement.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS17",
+      "title": "Cochrane Handbook Chapter 22, prospective accumulation",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-22",
+      "verified_date": "2026-10-29",
+      "claim": "Living reviews require frequent surveillance and timely incorporation of new evidence, rather than merely a recent publication date.",
+      "scope": "Living systematic reviews.",
+      "caveat": "Example monthly frequencies in guidance are illustrative, not universal SLA requirements. Track separate discovery, appraisal and incorporation times.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS18",
+      "title": "Cochrane guidance for living systematic reviews, December 2019",
+      "url": "https://resources.cochrane.org/sites/resources.cochrane.org/files/uploads/inline-files/Transform/201912_LSR_Revised_Guidance.pdf",
+      "verified_date": "2026-10-29",
+      "claim": "Living status requires continual surveillance, continual status updates and an explicit approach to updating the review itself.",
+      "scope": "Living intervention-review lifecycle.",
+      "caveat": "Public freshness labels need audit logs and declared surveillance coverage; not every new study warrants a changed conclusion.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS19",
+      "title": "Cochrane MECIR C42: collating multiple reports",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/mecir-manual/standards-conduct-new-cochrane-intervention-reviews-c1-c75/performing-review-c24-c75/selecting-studies-include-review-c39-c42",
+      "verified_date": "2026-10-29",
+      "claim": "Multiple reports from one study must be collated so that the study is the review unit.",
+      "scope": "Study identity and report linkage.",
+      "caveat": "Count reports, effect rows, participant cohorts and independent studies separately; shared controls/repeated follow-up also require dependence handling.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS20",
+      "title": "Cochrane Handbook Chapter 10, meta-analysis",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-10",
+      "verified_date": "2026-10-29",
+      "claim": "Meta-analysis combines sufficiently compatible study results; heterogeneity, effect-scale selection and sensitivity analyses require judgment. Random-effects estimates describe an average with prediction intervals where defensible.",
+      "scope": "Within a clinically and statistically coherent comparison/outcome/timepoint/estimand cell.",
+      "caveat": "Never pool unrelated diseases or outcomes into a universal treatment effect. Small-k heterogeneity and prediction intervals are uncertain.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS21",
+      "title": "QUADAS-3 official University of Bristol page",
+      "url": "https://www.bristol.ac.uk/population-health-sciences/projects/quadas/quadas-3/",
+      "verified_date": "2026-10-29",
+      "claim": "Official page recommends QUADAS-3 for test-accuracy reviews, published February 2026; latest downloadable version shown as 1.2. It moves assessment to estimate level.",
+      "scope": "Accuracy studies for diagnosis, screening or staging.",
+      "caveat": "Use current QUADAS3 module, not a default QUADAS2 template. Preserve the downloaded version and clarify synthesis questions/ideal test-accuracy study.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS22",
+      "title": "PROBAST+AI original instrument paper",
+      "url": "https://www.bmj.com/content/388/bmj-2024-082505",
+      "verified_date": "2026-10-29",
+      "claim": "PROBAST+AI updates appraisal for regression/AI prediction models, separates development quality from bias in performance evaluation, and considers applicability and fairness.",
+      "scope": "Prediction model development and apparent/internal/external performance evaluation.",
+      "caveat": "This appraises evidence about prediction models; it is not a generic score for the trustworthiness of an LLM answer.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS23",
+      "title": "ROBINS-E official tool page",
+      "url": "https://www.riskofbias.info/welcome/robins-e-tool",
+      "verified_date": "2026-10-29",
+      "claim": "ROBINS-E version 24 March 2024 addresses effects of exposures in observational epidemiological follow-up studies.",
+      "scope": "Environmental, occupational and behavioural exposure results.",
+      "caveat": "Useful for broad-health causal claims; not interchangeable with ROBINS-I intervention appraisal or with mere association extraction.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS24",
+      "title": "GRADE-CERQual official approach",
+      "url": "https://www.cerqual.org/what-is-the-grade-cerqual-approach2/",
+      "verified_date": "2026-10-29",
+      "claim": "CERQual assesses confidence in each qualitative synthesis finding using methodological limitations, coherence, adequacy and relevance.",
+      "scope": "Qualitative review findings about experience, barriers, acceptability or implementation.",
+      "caveat": "Qualitative findings do not need a numeric treatment effect; retain finding-specific categorical confidence.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS25",
+      "title": "Australian Living Evidence Collaboration: Living Guidelines Handbook v1.1, Aug2025",
+      "url": "https://livingevidence.org.au/wp-content/uploads/Living-Guidelines-Handbook-v1.1-Aug2025.pdf",
+      "verified_date": "2026-10-29",
+      "claim": "A living guideline comprises living recommendations updated as information becomes available, supported by continuing evidence surveillance.",
+      "scope": "Living recommendation lifecycle.",
+      "caveat": "Surveillance, review and recommendation revision are separate processes; publish explicit no-change decisions as well as changed versions.",
+      "verification": "search_index"
+    },
+    {
+      "id": "CS26",
+      "title": "Cochrane Methods Report 2026, published 16 September 2026",
+      "url": "https://www.cochrane.org/about-us/news/cochrane-methods-report-2026",
+      "verified_date": "2026-10-29",
+      "claim": "Cochrane reports RAISE version4 released in early March2026 with updated AI taxonomy and responsible-handover guidance. It reports CESAR protocol publication and expected results later in2026.",
+      "scope": "Current responsible-AI framework and methods status.",
+      "caveat": "Version4 release is verified through Cochrane; OSF direct page returned403, so full RAISE4 questionnaire content was not independently retrieved.",
+      "verification": "direct_open"
+    },
+    {
+      "id": "CS27",
+      "title": "RAISE project / Responsible use of AI in evidence synthesis",
+      "url": "https://osf.io/fwaud/",
+      "verified_date": "2026-10-29",
+      "claim": "RAISE is the responsible-AI framework linked from Cochrane's2026 report; v4 early March2026 is identified by Cochrane.",
+      "scope": "Responsible handover, tool selection, validation, disclosure and oversight.",
+      "caveat": "OSF direct access403. Do not imply all current recommendations were read directly; use Cochrane's account and retrieve/freeze actual v4 documents before instrument implementation.",
+      "verification": "linked_official_or_author_repository"
+    },
+    {
+      "id": "CS28",
+      "title": "Cochrane: Right tool, right job, 15June2026",
+      "url": "https://www.cochrane.org/about-us/news/right-tool-right-job-deciding-when-not-use-ai-tool",
+      "verified_date": "2026-10-29",
+      "claim": "Four expectations are author responsibility, preserved methodological rigor/integrity, transparent reporting and human oversight. Selection examines purpose, data provenance, contextual validation, usability and transparency; context-specific performance thresholds lack community consensus.",
+      "scope": "Practical implementation of RAISE3 and tool-use decisions.",
+      "caveat": "This is implementation guidance, not clinical validation of every tool. CESAR stopping thresholds shown there belong to that study and must not be presented as universal acceptable-performance cutoffs.",
+      "verification": "direct_open"
+    },
+    {
+      "id": "CS29",
+      "title": "Cochrane: What makes the new AI study innovative, 17April2026",
+      "url": "https://www.cochrane.org/about-us/news/what-makes-cochranes-new-ai-study-innovative",
+      "verified_date": "2026-10-29",
+      "claim": "CESAR embeds AI-tool comparisons in roughly15Cochrane review updates, using an adaptive platform SWAR allowing additions/removals of tools and examining downstream errors, accuracy, stability, efficiency and usability.",
+      "scope": "Prospective workflow evaluation rather than one-time static tests.",
+      "caveat": "The April post describes a study/protocol and novelty claims by its authors, not completed outcome evidence or a validated universal benchmark.",
+      "verification": "direct_open"
+    },
+    {
+      "id": "CS30",
+      "title": "CESAR protocol, Journal of Clinical Epidemiology, doi10.1016/j.jclinepi.2026.112390",
+      "url": "https://doi.org/10.1016/j.jclinepi.2026.112390",
+      "verified_date": "2026-10-29",
+      "claim": "The protocol specifies a master adaptive platform SWAR comparing tools with human-only processes for title/abstract screening, full-text screening and extraction. Evaluations include accuracy, time, response stability, error impacts and usability.",
+      "scope": "Task and workflow validation in ongoing reviews.",
+      "caveat": "Protocol publication is not proof of performance; cite study status accurately. Publisher full text returned403; author repository abstract and accepted-manuscript metadata were accessible.",
+      "verification": "linked_official_or_author_repository"
+    },
+    {
+      "id": "CS31",
+      "title": "UCL author repository: CESAR protocol record",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10227665/",
+      "verified_date": "2026-10-29",
+      "claim": "Repository confirms JCE Article112390, DOI, accepted version available and study design; describes the comparator as two trained researchers independently completing each step.",
+      "scope": "Primary author-repository record supporting CESAR design.",
+      "caveat": "Record labels article Inpress. Main benchmark reference should additionally use independently adjudicated disagreements and clinicians/methodologists for material issues; that adjudication policy is our proposal, not a quoted CESAR requirement.",
+      "verification": "direct_open"
+    }
+  ],
+  "evaluation_units": [
+    {
+      "unit": "claim",
+      "definition": "Atomic verifiable factual or causal statement with eligible source support and scope."
+    },
+    {
+      "unit": "result",
+      "definition": "Study identity × outcome × comparison × endpoint × estimand × analysis variant; links all reports and data provenance."
+    },
+    {
+      "unit": "synthesis_cell",
+      "definition": "Population × intervention/exposure × comparator × outcome × time window × design/estimand; k counts independent contributing study units after overlap handling."
+    },
+    {
+      "unit": "recommendation",
+      "definition": "Decision with direction, strength, conditions, target population, certainty, EtD rationale and jurisdiction."
+    },
+    {
+      "unit": "deliverable",
+      "definition": "Whole evidence answer/review/guideline package/version, with a declared task track and resource envelope."
+    }
+  ],
+  "guideline_pipeline": [
+    "Scope, population, users and jurisdiction; priority questions and patient-important outcomes.",
+    "Protocol, methods and conflicts; multidisciplinary panel and patient/public involvement.",
+    "Reproducible search and selection, report-to-study linkage and exclusion reasons.",
+    "Result-level extraction, appraisal, synthesis and outcome-level certainty.",
+    "EtD: benefits/harms, values, resources, equity, acceptability, feasibility and contextual judgment.",
+    "Recommendation formulation, transparent rationale, independent quality assurance and consultation.",
+    "Publication with provenance, version, search cutoff and declared surveillance/update rules.",
+    "Surveillance, triage, adjudication and versioned update or documented no-change decision."
+  ],
+  "proposed_critical_gates": [
+    {
+      "id": "G1",
+      "name": "Source integrity",
+      "test": "A material claim cites a fabricated, materially misattributed, retracted-without-context or unsupported source.",
+      "outcome": "Claim fails; serious safety-critical instances block overall certification.",
+      "basis": [
+        "CS01",
+        "CS15"
+      ],
+      "status": "New benchmark rule; thresholds require prespecification and validation."
+    },
+    {
+      "id": "G2",
+      "name": "Study identity/dependence",
+      "test": "Duplicated reports/cohorts/shared controls materially inflate independent k or precision without correction.",
+      "outcome": "Affected synthesis fails until recomputed.",
+      "basis": [
+        "CS19",
+        "CS20"
+      ],
+      "status": "New benchmark gate grounded in established methods."
+    },
+    {
+      "id": "G3",
+      "name": "Numerical/causal validity",
+      "test": "A material direction, denominator, scale, unit, estimand or causal-design error changes interpretation.",
+      "outcome": "Affected estimate/claim fails; publish error taxonomy.",
+      "basis": [
+        "CS07",
+        "CS09",
+        "CS20",
+        "CS23"
+      ],
+      "status": "New benchmark gate; clinical materiality adjudicated independently."
+    },
+    {
+      "id": "G4",
+      "name": "Unsafe recommendation/overclaim",
+      "test": "Omitted serious contraindication/harm or unsupported recommendation strength materially increases risk.",
+      "outcome": "Recommendation fails even if other dimensions are high.",
+      "basis": [
+        "CS01",
+        "CS13",
+        "CS16"
+      ],
+      "status": "New benchmark gate; not an official GRADE/AGREE pass threshold."
+    },
+    {
+      "id": "G5",
+      "name": "Auditability",
+      "test": "No recoverable run/version, source cutoff, source links or evidence-to-claim mapping for an audit-required task.",
+      "outcome": "Not auditable; do not certify, while distinguishing unavailable from demonstrably wrong.",
+      "basis": [
+        "CS10",
+        "CS12",
+        "CS18"
+      ],
+      "status": "New benchmark gate."
+    },
+    {
+      "id": "G6",
+      "name": "Scope and applicability",
+      "test": "Evidence is presented as directly applicable outside its studied population/context without acknowledging material indirectness.",
+      "outcome": "Claim/recommendation fails applicability review when risk is clinically important.",
+      "basis": [
+        "CS01",
+        "CS03",
+        "CS16",
+        "CS21"
+      ],
+      "status": "New benchmark gate."
+    }
+  ],
+  "operational_mapping": [
+    {
+      "dimension": "Retrieval completeness",
+      "metric": "Recall/precision against a time-frozen, adjudicated eligible corpus, sensitivity to missing sentinel studies.",
+      "recognized_basis": [
+        "CS12",
+        "CS15"
+      ],
+      "limit": "Search reporting is not measured recall; incomplete reference corpora require uncertainty labels."
+    },
+    {
+      "dimension": "Bias/certainty fidelity",
+      "metric": "Agreement with independent expert result-level judgments; weighted kappa/ordinal error with rationales, plus critical disagreement review.",
+      "recognized_basis": [
+        "CS01",
+        "CS02",
+        "CS07",
+        "CS09"
+      ],
+      "limit": "Do not reward high-certainty labels as such; judge whether certainty is justified."
+    },
+    {
+      "dimension": "Review quality",
+      "metric": "Native AMSTAR2/ROBIS judgments plus a separately named benchmark performance score for task correctness.",
+      "recognized_basis": [
+        "CS05",
+        "CS06"
+      ],
+      "limit": "No AMSTAR sum; risk-of-bias labels remain native categorical judgments."
+    },
+    {
+      "dimension": "Guideline quality",
+      "metric": "Six original AGREEII domain scores, two global judgments, EtD completeness, RIGHT reporting.",
+      "recognized_basis": [
+        "CS01",
+        "CS03",
+        "CS04"
+      ],
+      "limit": "No official universal domain pass/fail threshold; generation alone does not supply a legitimate guideline panel."
+    },
+    {
+      "dimension": "Live performance",
+      "metric": "Publication/indexing availability→discovery→eligibility/appraisal→incorporation lags; eligible-new-evidence recall; missed safety update rate.",
+      "recognized_basis": [
+        "CS17",
+        "CS18",
+        "CS25"
+      ],
+      "limit": "Frozen benchmark and prospective living benchmark must remain separate; timely no-change decisions are valid."
+    },
+    {
+      "dimension": "Generalizability",
+      "metric": "Target-relative population coverage and indirectness, explicitly stratified by age/sex/gender/ethnicity/geography/setting.",
+      "recognized_basis": [
+        "CS01",
+        "CS16",
+        "CS22"
+      ],
+      "limit": "Observed demographic diversity is not proof of effect transportability; missing reporting is unknown, not zero representation."
+    },
+    {
+      "dimension": "Stability",
+      "metric": "Predefined sensitivity analysis and longitudinal changes in effect/clinical decision; perturbations must include removal of influential/high-bias studies.",
+      "recognized_basis": [
+        "CS20"
+      ],
+      "limit": "Stability alone is not accuracy; correct reversal after new evidence must be rewarded."
+    }
+  ],
+  "overall_score_caution": "A separate proposed 0–100 task-performance index can be piloted after prespecifying weights and noncompensable gates. Label it experimental. Do not present it as GRADE, AMSTAR2 or AGREE certification, and do not conflate evidence-base certainty, evidence-base demographic completeness and the producer’s quality of work.",
+  "human_reference_process": "Two independent trained reviewers per key claim/result/cell; third expert adjudication; topic clinician and methods/statistics input for material disagreements. Report reviewer agreement and both reference uncertainty and system uncertainty. Source labels made by an LLM remain draft judgments until adjudicated.",
+  "licensing_note": "Only concise paraphrases and links are reproduced here, not full copyrighted instruments. Check current instrument permissions before bundling questionnaires or commercializing derivative implementations.",
+  "RAISE_CESAR_integration": {
+    "principle": "Use RAISE4 as current responsible-AI framework after obtaining and freezing actual files; use CESAR adaptive SWAR as the closest methodological template for prospective task/workflow evaluation.",
+    "requirements": [
+      "Tool purpose, version, data provenance, intended workflow role, resource envelope and human supervision are recorded.",
+      "Evaluate standalone outputs and human+AI workflows separately; retain same task, source corpus, cutoff and budgets where compared.",
+      "Prespecify accuracy, error-impact, response-stability, efficiency/usability metrics and stopping/noninferiority criteria before system outputs are unblinded.",
+      "Do not reuse CESAR study-specific thresholds as medical consensus.",
+      "A human reference panel independently reviews and adjudicates; LLMs can assist triage but do not act as sole ground-truth judges.",
+      "Hold public dev and private heldout/prospective temporal splits, retiring leaked tasks without retrospectively rewriting scores.",
+      "Downstream change in synthesized effects, certainty and recommendations must be measured, not only extraction cell accuracy."
+    ],
+    "status_caveat": "Sources describe ongoing methods guidance and study protocols. No CESAR tool performance results or benchmark validation are inferred."
+  }
+}

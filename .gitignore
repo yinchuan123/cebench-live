@@ -1,0 +1,30 @@
+# Local execution, internal deployment checkout and user submissions
+node_modules/
+work/
+dist/
+.cache/
+coverage/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+*.sqlite
+*.sqlite-*
+*.db
+uploads/
+private/
+submissions/
+
+# System metadata and generated QA
+.DS_Store
+._*
+__pycache__/
+*.pyc
+outputs/**/qa/
+outputs/**/*-qa-*.png
+outputs/**/*.zip
+
+
+# Downloaded OCR language binaries; provenance is in build resources
+vendor/ocr/*.gz

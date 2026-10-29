@@ -1,0 +1,23 @@
+'use strict';
+const fs=require('fs'),path=require('path'),assert=require('assert');
+const {pathToFileURL}=require('url');
+const {chromium}=require('playwright');
+(async()=>{
+ const root=path.resolve(__dirname,'..'),out=path.join(root,'outputs/v0.1/qa');
+ const browser=await chromium.launch({headless:true,...(process.env.CEBENCH_CHROMIUM_PATH?{executablePath:process.env.CEBENCH_CHROMIUM_PATH}:{})});
+ const page=await browser.newPage({viewport:{width:800,height:1250}});const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ await page.goto(pathToFileURL(path.join(out,'inline-preview.html')).href);
+ const frame=page.frameLocator('iframe');await frame.locator('#ce-inline-rows tr').first().waitFor();
+ const inputs=frame.locator('input[type=number]');assert.equal(await inputs.count(),10);
+ for(let i=0;i<10;i++)if(await inputs.nth(i).isEnabled())await inputs.nth(i).fill('80');
+ assert.equal(await frame.locator('#ce-inline-score').textContent(),'80.0');
+ await frame.locator('#ce-inline-critical').check();assert.match(await frame.locator('#ce-inline-status').textContent(),/重大错误/);
+ await frame.locator('#ce-inline-profile').selectOption('live');assert.equal(await frame.locator('#ce-inline-score').textContent(),'待录入');
+ await inputs.nth(6).fill('80');assert.equal(await frame.locator('#ce-inline-score').textContent(),'80.0');
+ await page.screenshot({path:path.join(out,'inline-desktop.png')});
+ await page.setViewportSize({width:360,height:1350});await page.screenshot({path:path.join(out,'inline-mobile.png')});
+ const overflow=await page.frames()[1].evaluate(()=>({width:innerWidth,scroll:document.documentElement.scrollWidth}));
+ assert.ok(overflow.scroll<=overflow.width+1,JSON.stringify(overflow));assert.deepEqual(errors,[]);
+ fs.writeFileSync(path.join(out,'inline-qa-results.json'),JSON.stringify({errors,overflow,states:['null','core80','severe_gate','live_missing','live80'],notice:'All values used only as synthetic arithmetic checks; no model tested'},null,2));
+ await browser.close();console.log('Inline interaction checks passed.');
+})().catch(e=>{console.error(e);process.exit(1)});

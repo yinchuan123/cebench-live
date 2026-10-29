@@ -1,0 +1,922 @@
+{
+  "benchmark_id": "CEBench-Live",
+  "version": "0.2.1-planning",
+  "as_of": "2026-10-29",
+  "timezone": "Asia/Shanghai",
+  "status": "proposed_framework_not_validated",
+  "purpose": "Cross-design clinical and health evidence system evaluation",
+  "compatible_with_v0_1_scorer": false,
+  "formal_ranking_enabled": false,
+  "composite_score_enabled": false,
+  "weights": null,
+  "maturity_scale": {
+    "M0": "planned",
+    "M1": "frozen_contract_and_rubric",
+    "M2": "internally_validated",
+    "M3": "externally_validated"
+  },
+  "new_plan_adjudicated_roots": 0,
+  "new_plan_real_runs": 0,
+  "existing_seed_file": "data/pilot-topic-seeds.json",
+  "dimensions": [
+    {
+      "id": "C01",
+      "name": "发现筛选与研究关联",
+      "question": "是否找到并正确识别该用的证据",
+      "observations": "审定参考集中的研究召回、筛选敏感度、误纳、报告与研究或队列关联错误",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C02",
+      "name": "来源与主张支持",
+      "question": "结论能否回到真实且支持它的来源",
+      "observations": "引文真实性、主张支持精确率、必需主张引用召回、页段定位、版本完整性",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C03",
+      "name": "数据与语义忠实",
+      "question": "数字、定义和缺失是否保真",
+      "observations": "组别、分母、单位、结局、时点、效应、方差和原始字段正确率",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C04",
+      "name": "问题与方法匹配",
+      "question": "是否选择适用设计、工具和推断",
+      "observations": "PICOTS、目标效应、设计识别、RoB 工具匹配、混杂和因果限制",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C05",
+      "name": "综合与数值有效性",
+      "question": "合并和计算是否成立",
+      "observations": "独立 k、兼容分析单元、效应尺度、CI、异质性、敏感性和拒绝不当合并",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C06",
+      "name": "确定性与校准",
+      "question": "对知道和不知道是否判断适当",
+      "observations": "逐重要结局的确定性理由、过度确定率、适当拒答；概率输出另测 Brier 等",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C07",
+      "name": "适用性与可迁移性",
+      "question": "研究结果是否适用于目标人群和地区",
+      "observations": "间接性、外部验证、证据缺口、地区差异、资源可得性及无依据外推率",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C08",
+      "name": "个体化决策",
+      "question": "对这个人的条件是否作出有依据的调整",
+      "observations": "相关条件敏感性、绝对效应、收益伤害、偏好整合、必要追问、明确未知",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C09",
+      "name": "临床安全",
+      "question": "是否遗漏会改变行动的重要危险",
+      "observations": "严重错误问题根比例及输出级比例、禁忌与关键伤害遗漏、单位剂量错误、紧急情况处理",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C10",
+      "name": "公平与稳健",
+      "question": "表现差异与输入变化是否合理",
+      "observations": "分组错误和拒答差异、无关扰动、重复稳定性、恶意文献指令抵抗；分别报子项",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C11",
+      "name": "决策沟通与可用性",
+      "question": "用户能否正确理解并采取适当行动",
+      "observations": "风险理解、收益伤害表达、共享决策、问题回答完整性、误导性和返工需求",
+      "maturity": "M0",
+      "rubric_frozen": false
+    },
+    {
+      "id": "C12",
+      "name": "复现与过程完整性",
+      "question": "第三方能否核查交付过程",
+      "observations": "运行版本、来源清单、检索日志、分析复算、人员角色、变更和利益冲突披露",
+      "maturity": "M0",
+      "rubric_frozen": false
+    }
+  ],
+  "panels": [
+    {
+      "id": "U",
+      "name": "动态更新",
+      "measures": [
+        "material_event_detection",
+        "correct_integration",
+        "change_and_no_change_response",
+        "latency",
+        "missed_and_censored_events"
+      ],
+      "maturity": "M0"
+    },
+    {
+      "id": "E",
+      "name": "资源与人工投入",
+      "measures": [
+        "latency",
+        "cost",
+        "expert_minutes",
+        "rework",
+        "budget",
+        "failures_and_timeouts"
+      ],
+      "maturity": "M0"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "T1",
+      "name": "临床证据问答",
+      "deliverable": "可核查的快速回答或证据简报",
+      "boundary": "不要求短答完成一篇正式综述",
+      "maturity": "M0",
+      "eligible_for_formal_ranking": false
+    },
+    {
+      "id": "T2",
+      "name": "系统综述与综合",
+      "deliverable": "检索、筛选、研究关联、提取、偏倚、统计及确定性",
+      "boundary": "成对、NMA、诊断、IPD 等分别冻结模块",
+      "maturity": "M0",
+      "eligible_for_formal_ranking": false
+    },
+    {
+      "id": "T3",
+      "name": "指南证据包",
+      "deliverable": "证据概况、EtD、推荐草案",
+      "boundary": "正式指南的委员会、患者参与及外审须真实存在",
+      "maturity": "M0",
+      "eligible_for_formal_ranking": false
+    },
+    {
+      "id": "T4",
+      "name": "公众健康沟通",
+      "deliverable": "面向公众的健康建议、风险表达和辟谣",
+      "boundary": "加入目标使用者的理解与误解测量",
+      "maturity": "M0",
+      "eligible_for_formal_ranking": false
+    },
+    {
+      "id": "T5",
+      "name": "原始数据分析",
+      "deliverable": "RWE、因果、预测及经济模型分析",
+      "boundary": "使用专用数据权限、方法和复算规则",
+      "maturity": "M0",
+      "eligible_for_formal_ranking": false
+    },
+    {
+      "id": "T6",
+      "name": "流程组件",
+      "deliverable": "检索、筛选、单篇评价、提取、RoB、统计等",
+      "boundary": "子任务表现不能代替全流程表现",
+      "maturity": "M0",
+      "eligible_for_formal_ranking": false
+    },
+    {
+      "id": "T7",
+      "name": "个体化证据支持",
+      "deliverable": "具体患者或决策者条件下的证据应用",
+      "boundary": "评价建议过程与证据适配；患者实际获益另做临床验证",
+      "maturity": "M0",
+      "eligible_for_formal_ranking": false
+    }
+  ],
+  "evidence_modules": [
+    {
+      "id": "MOD01",
+      "name": "干预效果",
+      "evidence": "药物、手术、器械、康复、心理、运动、营养；个体或集群随机试验及非随机干预",
+      "focus": "目标效应、收益伤害、独立性、偏倚、效应合成",
+      "sequence": "第一批",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD02",
+      "name": "诊断与检测",
+      "evidence": "诊断、筛查、分期、实验室及影像检测",
+      "focus": "阈值、参照标准、敏感度特异度、下游患者结局",
+      "sequence": "第一批",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD03",
+      "name": "预后与预测",
+      "evidence": "预后因素、自然病程、传统或 AI 预测模型",
+      "focus": "校准、区分度、外部验证、适用性；区分预测与因果",
+      "sequence": "第一批",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD04",
+      "name": "病因暴露与伤害",
+      "evidence": "队列、病例对照、环境职业暴露、药物警戒",
+      "focus": "混杂、选择偏倚、时间结构、因果外推",
+      "sequence": "第一批",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD05",
+      "name": "人群描述与疾病负担",
+      "evidence": "患病率、发病率、调查与横断面研究",
+      "focus": "抽样框架、代表性、测量和标准化；不强加因果解释",
+      "sequence": "第二批",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD06",
+      "name": "病例与罕见信号",
+      "evidence": "病例报告、病例系列、罕见病线索",
+      "focus": "信号价值和推断边界；不从单例确证疗效",
+      "sequence": "第二批",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD07",
+      "name": "证据综合",
+      "evidence": "系统综述、成对 Meta、网络 Meta、诊断 Meta、IPD、剂量反应、范围及快速综述",
+      "focus": "各设计专用方法；不宜合并时的判断",
+      "sequence": "成对综合先行，其余扩展",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD08",
+      "name": "指南与推荐",
+      "evidence": "临床指南、公共健康及政策推荐、HTA 证据包",
+      "focus": "证据确定性、EtD、地区适用、利益冲突和治理",
+      "sequence": "证据包先行",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD09",
+      "name": "定性与混合研究",
+      "evidence": "体验、价值偏好、可接受性、实施障碍",
+      "focus": "方法限制、主题综合、CERQual、混合证据整合",
+      "sequence": "第二批",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD10",
+      "name": "卫生经济学",
+      "evidence": "成本效果、预算影响、模型研究、资源配置",
+      "focus": "结构和输入假设、成本年份、阈值、敏感性及转移性",
+      "sequence": "第二批",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD11",
+      "name": "测量与患者报告结局",
+      "evidence": "量表、PROM、生活质量、测量属性",
+      "focus": "内容效度、可靠性、反应度及重要差异解释",
+      "sequence": "第二批",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD12",
+      "name": "公共与人群健康",
+      "evidence": "疫苗、生活方式、预防、社会照护、健康不平等",
+      "focus": "人群影响、实施、情境、可及性与公平",
+      "sequence": "第一批选题，逐步加深",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD13",
+      "name": "混合方法与实施",
+      "evidence": "复杂干预、健康系统、政策和实施研究",
+      "focus": "定量及定性组件、机制、情境、整合逻辑与实施可行性",
+      "sequence": "第二批",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD14",
+      "name": "真实世界与原始数据",
+      "evidence": "EHR、登记、理赔、调查、患者级数据",
+      "focus": "缺失、测量、泄漏、因果识别、可复算与隐私",
+      "sequence": "独立扩展赛道",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD15",
+      "name": "数字健康与临床 AI",
+      "evidence": "模型、设备、工作流、多模态临床应用",
+      "focus": "开发与验证、数据漂移、人因、临床影响",
+      "sequence": "预测评估先行，部署扩展",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD16",
+      "name": "证据不足与完整性",
+      "evidence": "阴性或冲突证据、未报告亚组、勘误撤稿、预印本",
+      "focus": "识别未知、不夸大、正确处理版本和撤稿影响",
+      "sequence": "所有批次必含",
+      "maturity": "M0"
+    },
+    {
+      "id": "MOD17",
+      "name": "机制与临床前支持",
+      "evidence": "动物、体外、机制、替代终点",
+      "focus": "识别证据层级、转化限制；不能直接推出患者获益",
+      "sequence": "边界任务，专用模块扩展",
+      "maturity": "M0"
+    }
+  ],
+  "run_modes": [
+    "fixed_corpus",
+    "controlled_open_retrieval",
+    "historical_replay",
+    "prospective_live"
+  ],
+  "resource_tracks": [
+    "common_resources",
+    "native_product_resources"
+  ],
+  "evaluation_modes": [
+    "system_run",
+    "artifact_audit",
+    "benchmark_framework_audit"
+  ],
+  "gates": [
+    {
+      "id": "G1",
+      "name": "关键来源真实",
+      "status": "rubric_to_be_frozen"
+    },
+    {
+      "id": "G2",
+      "name": "关键数字与方向正确",
+      "status": "rubric_to_be_frozen"
+    },
+    {
+      "id": "G3",
+      "name": "研究独立性与推断有效",
+      "status": "rubric_to_be_frozen"
+    },
+    {
+      "id": "G4",
+      "name": "重大伤害与更新得到处理",
+      "status": "rubric_to_be_frozen"
+    },
+    {
+      "id": "G5",
+      "name": "确定性与外推无危险夸大",
+      "status": "rubric_to_be_frozen"
+    },
+    {
+      "id": "G6",
+      "name": "运行与参考审计有效",
+      "status": "rubric_to_be_frozen"
+    }
+  ],
+  "scoring_policy": {
+    "primary": "dimension_vector_plus_error_rates_completion_update_and_resources",
+    "missing_required_output": "failure",
+    "unmeasured": "unmeasured_not_pass",
+    "not_applicable": "only_as_prefrozen_task_contract",
+    "no_posthoc_reweighting": true,
+    "no_cross_track_version_or_resource_ranking": true,
+    "evidence_quality_separate_from_system_quality": true,
+    "serious_errors_not_compensated": true
+  },
+  "statistics": {
+    "unit": "independent_question_root_with_shared_source_family_links",
+    "dependent_variants": [
+      "patient_scenarios",
+      "timepoints",
+      "paraphrases",
+      "outcomes",
+      "claims",
+      "citations",
+      "repeated_runs"
+    ],
+    "design": "paired_same_manifest",
+    "ci": "root_clustered_or_source_family_aware_as_appropriate",
+    "sample_size": "pilot_informed_simulation_not_fixed_universal_n",
+    "formal_planning_range_roots": [
+      300,
+      500
+    ],
+    "range_is_power_validated": false,
+    "zero_event_example": {
+      "n_independent_roots": 300,
+      "events": 0,
+      "one_sided_confidence": 0.95,
+      "upper_bound": 0.00993608194445772,
+      "clinical_safety_certification": false
+    },
+    "serious_error_primary_event": "At least one adjudicated serious error within each independent question root, with prefrozen variant and repeat counts; report output-level rate separately."
+  },
+  "release_policy": {
+    "frozen_core": true,
+    "rolling_hidden": true,
+    "prospective_events": true,
+    "proposed_surveillance": "weekly",
+    "proposed_release": "monthly_adjudicated",
+    "proposed_coverage_audit": "quarterly",
+    "latency_origin": "prefrozen_allowed_resource_availability",
+    "preserve_old_versions": true,
+    "cross_version_scores_directly_comparable": false,
+    "background_automation_created": false
+  },
+  "roadmap": [
+    {
+      "id": "P1",
+      "phase": "定义与注册",
+      "window": "第 1 至 2 周",
+      "deliverables_and_scale_assumptions": "覆盖矩阵、标准注册表、七赛道合同、参考和裁判规程、风险判例",
+      "acceptance": "每个首批模块有适用单元、来源、版本和责任人；冻结开发与测试边界",
+      "roles": "方法负责人、临床负责人、项目负责人",
+      "status": "planned",
+      "service_deliverable": "冻结服务层级、范围、核查状态和计时口径"
+    },
+    {
+      "id": "P2",
+      "phase": "流程试点",
+      "window": "第 3 至 4 周",
+      "deliverables_and_scale_assumptions": "从 12 个种子审定 12 至 24 个独立问题根；3 类代表系统试运行",
+      "acceptance": "全部参考独立双审；来源可核查；无未解决的关键参考分歧；测出评审工时",
+      "roles": "临床与方法评审、数据负责人、工程负责人",
+      "status": "planned",
+      "service_deliverable": "即时初评、后台任务、进度查询与报价流程原型"
+    },
+    {
+      "id": "P3",
+      "phase": "量表验证",
+      "window": "第 2 至 3 月",
+      "deliverables_and_scale_assumptions": "48 至 60 个问题根；约 4 至 6 个系统或流程；个体化对照和历史更新题",
+      "acceptance": "一致性达到预注册目标；检查自动裁判偏差；用真实成本和方差重算正式规模",
+      "roles": "统计负责人、评审组、工程负责人",
+      "status": "planned",
+      "service_deliverable": "验证初评质量、P50/P95时延、专家容量和单位成本"
+    },
+    {
+      "id": "P4",
+      "phase": "首个冻结版",
+      "window": "第 4 至 6 月",
+      "deliverables_and_scale_assumptions": "按功效与预算确认的题量；300 至 500 根为规划情景；启用可成熟验证模块",
+      "acceptance": "无未解决关键参考问题；可独立复跑；至少一支外部团队验证；结果覆盖所有计划任务",
+      "roles": "独立验证团队、统计与数据负责人",
+      "status": "planned",
+      "service_deliverable": "仅在质量与容量均通过验收的模块开放相应服务"
+    },
+    {
+      "id": "P5",
+      "phase": "前瞻动态版",
+      "window": "第 4 至 12 月，与冻结版并行",
+      "deliverables_and_scale_assumptions": "持续证据事件、地区和语言验证、滚动保密集",
+      "acceptance": "用真实事件及对照验证响应；公布未处理与删失；复核新旧版可比性",
+      "roles": "更新编辑、专家组、工程与治理负责人",
+      "status": "planned"
+    },
+    {
+      "id": "P6",
+      "phase": "扩展与持续维护",
+      "window": "第 6 至 12 月及以后",
+      "deliverables_and_scale_assumptions": "定性、经济、PROM、原始 RWE、NMA、IPD 等按模块进入",
+      "acceptance": "每一扩展完成专用标准、参考、可靠性和外部验证后再启用",
+      "roles": "各领域模块负责人",
+      "status": "planned"
+    }
+  ],
+  "standard_registry": [
+    {
+      "id": "ROB2",
+      "name": "RoB 2",
+      "purpose_layer": "risk_of_bias",
+      "status_as_verified": "formal",
+      "version_note": "2019-08-22 parallel; 2021-03-18 cluster and crossover",
+      "official_or_original_url": "https://www.riskofbias.info/welcome/rob-2-0-tool",
+      "scope_caveat": "Specific randomized intervention result; select design variant",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "ROBINSI",
+      "name": "ROBINS-I",
+      "purpose_layer": "risk_of_bias",
+      "status_as_verified": "formal_2016_plus_draft_v2",
+      "version_note": "2016 formal; V2 document 2025-11-20 draft",
+      "official_or_original_url": "https://www.riskofbias.info/welcome/robins-i-v2",
+      "scope_caveat": "Do not silently replace frozen formal protocol with draft V2",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "ROBINSE",
+      "name": "ROBINS-E",
+      "purpose_layer": "risk_of_bias",
+      "status_as_verified": "formal",
+      "version_note": "2024-03-24",
+      "official_or_original_url": "https://www.riskofbias.info/welcome/robins-e-tool",
+      "scope_caveat": "Follow-up exposure study result; not all observational designs",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "QUADAS3",
+      "name": "QUADAS-3",
+      "purpose_layer": "risk_of_bias_and_applicability",
+      "status_as_verified": "formal",
+      "version_note": "Published 2026-02; official download v1.2",
+      "official_or_original_url": "https://www.bristol.ac.uk/population-health-sciences/projects/quadas/quadas-3/",
+      "scope_caveat": "Estimate-level diagnostic/screening/staging test accuracy",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "PROBASTAI",
+      "name": "PROBAST+AI",
+      "purpose_layer": "quality_risk_of_bias_and_applicability",
+      "status_as_verified": "formal",
+      "version_note": "2025",
+      "official_or_original_url": "https://www.bmj.com/content/388/bmj-2024-082505",
+      "scope_caveat": "Prediction model development and performance evaluation; separate judgments",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "CONSORT",
+      "name": "CONSORT",
+      "purpose_layer": "reporting",
+      "status_as_verified": "formal",
+      "version_note": "2025",
+      "official_or_original_url": "https://www.consort-spirit.org/published-statements",
+      "scope_caveat": "RCT reporting; extensions need compatibility check",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "SPIRIT",
+      "name": "SPIRIT",
+      "purpose_layer": "reporting",
+      "status_as_verified": "formal",
+      "version_note": "2025",
+      "official_or_original_url": "https://www.consort-spirit.org/published-statements",
+      "scope_caveat": "RCT protocol reporting",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "TRIPODAI",
+      "name": "TRIPOD+AI",
+      "purpose_layer": "reporting",
+      "status_as_verified": "formal",
+      "version_note": "2024",
+      "official_or_original_url": "https://pubmed.ncbi.nlm.nih.gov/38626949/",
+      "scope_caveat": "Prediction model reporting",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "STARDAI",
+      "name": "STARD-AI",
+      "purpose_layer": "reporting",
+      "status_as_verified": "formal",
+      "version_note": "2025",
+      "official_or_original_url": "https://www.nature.com/articles/s41591-025-03953-8",
+      "scope_caveat": "AI diagnostic accuracy reporting; not QUADAS-AI",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "QUADASAI",
+      "name": "QUADAS-AI",
+      "purpose_layer": "risk_of_bias",
+      "status_as_verified": "final_version_unverified",
+      "version_note": "Development protocol verified; final tool not verified in this review",
+      "official_or_original_url": "https://doi.org/10.2196/58202",
+      "scope_caveat": "Do not use as a verified final instrument",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "GRADE",
+      "name": "GRADE Book and applicable guidance",
+      "purpose_layer": "certainty_and_decision",
+      "status_as_verified": "formal_evolving",
+      "version_note": "Book available from 2024; lock relevant chapter snapshot",
+      "official_or_original_url": "https://book.gradepro.org/",
+      "scope_caveat": "Outcome-specific certainty; not averaged as interval scores",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "PRISMA",
+      "name": "PRISMA",
+      "purpose_layer": "reporting",
+      "status_as_verified": "formal",
+      "version_note": "2020 plus applicable extensions",
+      "official_or_original_url": "https://www.prisma-statement.org/extensions",
+      "scope_caveat": "Reporting is not conduct or risk of bias",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "PRISMALSR",
+      "name": "PRISMA-LSR",
+      "purpose_layer": "reporting",
+      "status_as_verified": "formal",
+      "version_note": "2024",
+      "official_or_original_url": "https://www.prisma-statement.org/lsr",
+      "scope_caveat": "Living systematic review reporting; not benchmark validity certification",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "AMSTAR2",
+      "name": "AMSTAR 2",
+      "purpose_layer": "methodological_appraisal",
+      "status_as_verified": "formal",
+      "version_note": "2017",
+      "official_or_original_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5833365/",
+      "scope_caveat": "Applicable intervention reviews; critical-domain logic; no item total",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "CERQUAL",
+      "name": "GRADE-CERQual",
+      "purpose_layer": "confidence_qualitative_findings",
+      "status_as_verified": "formal",
+      "version_note": "Freeze current guidance",
+      "official_or_original_url": "https://www.cerqual.org/overall-confidence-in-the-evidence/",
+      "scope_caveat": "Per qualitative synthesis finding",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "JBI",
+      "name": "JBI critical appraisal tools",
+      "purpose_layer": "design_specific_appraisal",
+      "status_as_verified": "formal_multiple_versions",
+      "version_note": "Analytical cross-sectional revised 2026; lock each tool",
+      "official_or_original_url": "https://jbi.global/critical-appraisal-tools",
+      "scope_caveat": "No single JBI version for all designs",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "CHEERS",
+      "name": "CHEERS",
+      "purpose_layer": "reporting",
+      "status_as_verified": "formal",
+      "version_note": "2022",
+      "official_or_original_url": "https://doi.org/10.1016/j.jval.2021.10.008",
+      "scope_caveat": "Economic reporting; not economic model validity score",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "COSMIN",
+      "name": "COSMIN PROM review guideline and RoB checklist",
+      "purpose_layer": "measurement_appraisal",
+      "status_as_verified": "formal",
+      "version_note": "2024 guideline v2.0; checklist v3",
+      "official_or_original_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11541334/",
+      "scope_caveat": "Measurement property and tool version-specific",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "AGREEII",
+      "name": "AGREE II",
+      "purpose_layer": "guideline_appraisal",
+      "status_as_verified": "formal",
+      "version_note": "Freeze official manual document",
+      "official_or_original_url": "https://www.agreetrust.org/resource-centre/agree-ii/",
+      "scope_caveat": "Requires true process information where relevant",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "RIGHT",
+      "name": "RIGHT",
+      "purpose_layer": "reporting",
+      "status_as_verified": "formal",
+      "version_note": "Original formal statement; update protocol not final version",
+      "official_or_original_url": "https://www.right-statement.org/",
+      "scope_caveat": "Not guideline quality assessment",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "TRIPODLLM",
+      "name": "TRIPOD-LLM",
+      "purpose_layer": "reporting",
+      "status_as_verified": "formal_living",
+      "version_note": "2025 publication; no verified 2026 new version number",
+      "official_or_original_url": "https://www.nature.com/articles/s41591-024-03425-5",
+      "scope_caveat": "Evaluation transparency, not clinical safety certification",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    },
+    {
+      "id": "GMLP",
+      "name": "IMDRF GMLP",
+      "purpose_layer": "lifecycle_guidance",
+      "status_as_verified": "formal",
+      "version_note": "N88 FINAL:2025",
+      "official_or_original_url": "https://www.imdrf.org/documents/good-machine-learning-practice-medical-device-development-guiding-principles",
+      "scope_caveat": "Device development principles; not approval of this benchmark",
+      "verified_on": "2026-10-29",
+      "registered_for_tasks": false,
+      "exact_document_hash": null,
+      "license_review_complete": false
+    }
+  ],
+  "source_notes": [
+    "research/standards_verified_20261029.md",
+    "research/landscape_verified_20261029.md",
+    "research/methods_personalization_20261029.md"
+  ],
+  "migration_note": "Do not pass this blueprint or its C01-C12 records into tools/scorer.js. v0.1 remains unchanged; future executable protocol requires independent implementation and validation.",
+  "service_model": {
+    "status": "proposed_not_implemented_or_latency_validated",
+    "maturity": "M0",
+    "same_standards_and_severity_definitions_across_tiers": true,
+    "purchase_changes_score_or_rank": false,
+    "pricing_status": "scope_based_after_pilot_costing_no_prices_set",
+    "instant_free_quota": "optional_not_decided",
+    "user_approval_required_before_paid_upgrade": true,
+    "profiles": [
+      {
+        "id": "instant_preliminary",
+        "name": "即时初评",
+        "proposed_receipt_response": "seconds",
+        "proposed_first_report_seconds": [
+          30,
+          120
+        ],
+        "scope_condition": "small directly parseable submitted material or completed system output",
+        "checks": [
+          "task_and_standard_routing",
+          "structure_and_missing_fields",
+          "automatically_verifiable_citations_and_numbers",
+          "risk_flags"
+        ],
+        "review_label": "automated_preliminary",
+        "full_reference_not_assumed": true,
+        "final_leaderboard_eligible": false
+      },
+      {
+        "id": "paid_automated_deep",
+        "name": "付费自动深评",
+        "proposed_delivery_minutes": [
+          10,
+          60
+        ],
+        "scope_condition": "small bounded task with necessary sources available",
+        "checks": [
+          "source_support",
+          "study_report_linkage",
+          "numeric_recalculation",
+          "method_consistency",
+          "personalization_pairs_as_contracted"
+        ],
+        "review_label": "automated_deep_not_expert_review",
+        "final_leaderboard_eligible": false
+      },
+      {
+        "id": "paid_expert_review",
+        "name": "付费专家复评",
+        "proposed_delivery_business_days": [
+          1,
+          3
+        ],
+        "scope_condition": "small bounded task with reviewers available; complex reviews require separate quote and timeline",
+        "checks": [
+          "contracted_clinical_and_methods_review",
+          "independent_dual_review_if_purchased",
+          "adjudication_if_required",
+          "versioned_corrections"
+        ],
+        "review_label": "actual_completed_review_scope",
+        "final_leaderboard_eligible": false
+      }
+    ],
+    "all_response_windows_are_unvalidated_targets": true,
+    "arbitrary_new_input": "partial_verification_until_reference_and_required_checks_established",
+    "new_system_run": "immediate_receipt_and_progress_only_until_actual_output_is_available",
+    "report_state_labels": [
+      "verified",
+      "pending_verification",
+      "source_unavailable",
+      "prefrozen_not_applicable"
+    ],
+    "job_stages": [
+      "submitted",
+      "preliminary_available",
+      "deep_review_queued",
+      "automated_verification",
+      "expert_review",
+      "adjudication",
+      "contracted_scope_delivered",
+      "unable_to_complete"
+    ],
+    "report_version_chain_required": true,
+    "latency_clocks": [
+      "receipt_acknowledgment",
+      "first_useful_result",
+      "contracted_report_delivery",
+      "evaluated_system_runtime"
+    ],
+    "total_wall_time_and_waits_reported": true,
+    "service_telemetry": [
+      "P50_P95_by_input_size_and_track",
+      "timeouts",
+      "failures",
+      "verification_coverage",
+      "expert_minutes",
+      "cost_per_order",
+      "preliminary_errors_revised_on_deep_review",
+      "independent_audit_of_deep_review"
+    ],
+    "quotation_fields": [
+      "input_limits",
+      "task_type",
+      "verification_units",
+      "source_access",
+      "human_review_fraction",
+      "dual_review_scope",
+      "deliverables",
+      "revision_scope",
+      "deadline",
+      "fee",
+      "refund_or_credit_rules"
+    ],
+    "pricing_confirmed_before_charge": true,
+    "automatic_paid_escalation": false,
+    "idempotent_jobs_and_charging_required": true,
+    "partial_failure": "disclose_completed_scope_and_gaps; seek_confirmation_for_added_fees_or_delay; refund_or_credit_undelivered_scope_as_agreed",
+    "cross_system_comparison": "freeze_service_profile_evaluation_budget_human_input_and_check_scope_separately_from_target_system_resources",
+    "public_ranking_requires_independent_protocol_even_if_paid": true,
+    "direction_status": "user_confirmed_three_tier_service_direction",
+    "confirmed_scope": [
+      "instant_preliminary",
+      "paid_automated_deep",
+      "paid_expert_review"
+    ],
+    "confirmation_note": "User accepted the three-tier service direction. Response windows, free quota and prices remain subject to pilot validation.",
+    "implementation_status": "not_implemented"
+  }
+}

@@ -1,0 +1,814 @@
+{
+  "record_kind": "blank_measurement_template_not_real_result",
+  "schema_version": "0.1.0-draft",
+  "benchmark_id": "CEBench-Live",
+  "catalog_version": "0.1.0-draft",
+  "selected_profile": "core",
+  "profile_note": "运行前选定core或live，不得在见到结果后切换；空模板没有真实评测分数。",
+  "actual_run": false,
+  "reference_adjudicated": false,
+  "dual_review_complete": false,
+  "field_contract": {
+    "numeric": "直接率与balanced率用非负safe integer计数；分母必须>0。null、数字字符串、布尔、NaN、Infinity、小数和不安全整数都不能作已完成的计数。",
+    "review": "complete须有不同reviewer1/2的id、judgment和reason，及独立第三人adjudication。adjudication.decision必须与顶层计数/锚点一致。此严格第三人签署是本草案执行规则。",
+    "evidence": "reference_item_ids为非空不重复字符串数组；source_locators每项须有source_id、locator和evidence_note。引擎只校验结构，来源真实性仍需实际核查。",
+    "status": "complete=全部原始值与审定证据齐备；omitted=漏交必需内容，计0；not_tested=未测，null；invalid=无效，null。",
+    "d7_flags": "D7.1需要flags.required_event_count>0、right_censored_count=0、all_sla_windows_matured=true，denominator等于required_event_count。无事件或SLA前右删失为null；逾期未响应仍为失败。",
+    "transforms": "只允许percent、identity_anchored、balanced_rate_percent三个操作。expression字符串仅为文档，不执行。",
+    "score_return": "scoreMetric(metric, observation, profile)→{metric_id,score,status,errors,reasons}",
+    "aggregate_return": "aggregateDimensions(catalog, observations, profile)→{profile,scores,metric_results,dimension_details,errors,disabled_dimensions,complete,valid,measured_dimension_weight,notice}"
+  },
+  "metric_observations": [
+    {
+      "metric_id": "D1.1",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D1.2",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D1.3",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D2.1",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D2.2",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D2.3",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D3.1",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D3.2",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D4.1",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D4.2",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D4.3",
+      "status": "not_tested",
+      "rubric_score": null,
+      "anchor_reason": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D5.1",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D5.2",
+      "status": "not_tested",
+      "rubric_score": null,
+      "anchor_reason": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D6.1",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D6.2",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D6.3",
+      "status": "not_tested",
+      "rubric_score": null,
+      "anchor_reason": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D7.1",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。",
+      "flags": {
+        "required_event_count": null,
+        "right_censored_count": null,
+        "all_sla_windows_matured": null
+      }
+    },
+    {
+      "metric_id": "D7.2",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D7.3",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D8.1",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D8.2",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D8.3",
+      "status": "not_tested",
+      "change_correct": null,
+      "change_total": null,
+      "retain_correct": null,
+      "retain_total": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D9.1",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D9.2",
+      "status": "not_tested",
+      "numerator": null,
+      "denominator": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D10.1",
+      "status": "not_tested",
+      "rubric_score": null,
+      "anchor_reason": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    },
+    {
+      "metric_id": "D10.2",
+      "status": "not_tested",
+      "rubric_score": null,
+      "anchor_reason": null,
+      "reviewer1": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "reviewer2": {
+        "id": null,
+        "judgment": null,
+        "reason": null
+      },
+      "adjudication": {
+        "status": null,
+        "adjudicator_id": null,
+        "decision": null,
+        "reason": null
+      },
+      "reference_item_ids": [],
+      "source_locators": [],
+      "notes": "空白占位，未运行；不能填成已测结果。"
+    }
+  ],
+  "synthetic_examples_notice": "以下仅展示字段合同，全部是合成算术fixture。没有真实来源、评审、模型运行或临床发现；禁止进入产品排行榜。",
+  "synthetic_examples": [
+    {
+      "metric_id": "D3.1",
+      "status": "complete",
+      "synthetic": true,
+      "numerator": 18,
+      "denominator": 20,
+      "reviewer1": {
+        "id": "SYNTHETIC-REVIEWER-1",
+        "judgment": {
+          "numerator": 18,
+          "denominator": 20
+        },
+        "reason": "合成字段示例，没有开展真实评审。"
+      },
+      "reviewer2": {
+        "id": "SYNTHETIC-REVIEWER-2",
+        "judgment": {
+          "numerator": 18,
+          "denominator": 20
+        },
+        "reason": "合成字段示例，没有开展真实评审。"
+      },
+      "adjudication": {
+        "status": "adjudicated",
+        "adjudicator_id": "SYNTHETIC-THIRD-REVIEWER",
+        "decision": {
+          "numerator": 18,
+          "denominator": 20
+        },
+        "reason": "合成字段示例，没有开展真实仲裁。"
+      },
+      "reference_item_ids": [
+        "SYNTHETIC-REFERENCE-ITEM"
+      ],
+      "source_locators": [
+        {
+          "source_id": "SYNTHETIC-SOURCE",
+          "locator": "合成表A第1行",
+          "evidence_note": "仅展示结构，没有真实临床来源或事实。"
+        }
+      ]
+    },
+    {
+      "metric_id": "D5.2",
+      "status": "complete",
+      "synthetic": true,
+      "rubric_score": 75,
+      "reviewer1": {
+        "id": "SYNTHETIC-REVIEWER-1",
+        "judgment": {
+          "rubric_score": 75
+        },
+        "reason": "合成字段示例，没有开展真实评审。"
+      },
+      "reviewer2": {
+        "id": "SYNTHETIC-REVIEWER-2",
+        "judgment": {
+          "rubric_score": 75
+        },
+        "reason": "合成字段示例，没有开展真实评审。"
+      },
+      "adjudication": {
+        "status": "adjudicated",
+        "adjudicator_id": "SYNTHETIC-THIRD-REVIEWER",
+        "decision": {
+          "rubric_score": 75
+        },
+        "reason": "合成字段示例，没有开展真实仲裁。"
+      },
+      "reference_item_ids": [
+        "SYNTHETIC-REFERENCE-ITEM"
+      ],
+      "source_locators": [
+        {
+          "source_id": "SYNTHETIC-SOURCE",
+          "locator": "合成表A第1行",
+          "evidence_note": "仅展示结构，没有真实临床来源或事实。"
+        }
+      ],
+      "anchor_reason": "合成75分行为锚点示例，非真实测量。"
+    },
+    {
+      "metric_id": "D8.3",
+      "status": "complete",
+      "synthetic": true,
+      "change_correct": 8,
+      "change_total": 10,
+      "retain_correct": 9,
+      "retain_total": 10,
+      "reviewer1": {
+        "id": "SYNTHETIC-REVIEWER-1",
+        "judgment": {
+          "change_correct": 8,
+          "change_total": 10,
+          "retain_correct": 9,
+          "retain_total": 10
+        },
+        "reason": "合成字段示例，没有开展真实评审。"
+      },
+      "reviewer2": {
+        "id": "SYNTHETIC-REVIEWER-2",
+        "judgment": {
+          "change_correct": 8,
+          "change_total": 10,
+          "retain_correct": 9,
+          "retain_total": 10
+        },
+        "reason": "合成字段示例，没有开展真实评审。"
+      },
+      "adjudication": {
+        "status": "adjudicated",
+        "adjudicator_id": "SYNTHETIC-THIRD-REVIEWER",
+        "decision": {
+          "change_correct": 8,
+          "change_total": 10,
+          "retain_correct": 9,
+          "retain_total": 10
+        },
+        "reason": "合成字段示例，没有开展真实仲裁。"
+      },
+      "reference_item_ids": [
+        "SYNTHETIC-REFERENCE-ITEM"
+      ],
+      "source_locators": [
+        {
+          "source_id": "SYNTHETIC-SOURCE",
+          "locator": "合成表A第1行",
+          "evidence_note": "仅展示结构，没有真实临床来源或事实。"
+        }
+      ]
+    }
+  ]
+}

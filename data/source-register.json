@@ -1,0 +1,942 @@
+{
+  "as_of": "2026-10-29",
+  "status": "curated_sources_not_systematic_review",
+  "source_records": 76,
+  "unique_urls": 73,
+  "sources": [
+    {
+      "id": "CS01",
+      "title": "GRADE Working Group: minimal requirements (updated 2023-05)",
+      "url": "https://www.gradeworkinggroup.org/",
+      "verified_date": "2026-10-29",
+      "claim": "Certainty is judged for each critical or important outcome; benefits and harms, each relevant GRADE domain, evidence profiles and explicit EtD judgments underpin claims of GRADE use. Recommendations separate direction and strength.",
+      "scope": "Body of evidence per important outcome; decisions/recommendations use additional EtD criteria.",
+      "caveat": "GRADE categories are ordinal judgments, not interval numbers; avoid modified GRADE or numerical averaging into a new certainty score.",
+      "verification": "direct_open",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS02",
+      "title": "Cochrane Handbook Chapter 14: Summary of findings and GRADE",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-14",
+      "verified_date": "2026-10-29",
+      "claim": "GRADE uses four certainty categories and considers risk of bias, inconsistency, indirectness, imprecision and publication bias. SoF tables combine effect magnitude, data quantity and certainty.",
+      "scope": "Outcome-specific synthesis across contributing studies.",
+      "caveat": "Correctly reporting very-low-certainty evidence is good output quality; a model must not be rewarded merely for choosing high-certainty topics.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS03",
+      "title": "AGREE II user manual and 23-item instrument",
+      "url": "https://www.agreetrust.org/wp-content/uploads/2013/06/AGREE_II_Users_Manual_and_23-item_Instrument_ENGLISH.pdf",
+      "verified_date": "2026-10-29",
+      "claim": "AGREE II contains 23 items across six domains plus two global ratings. At least two and preferably four appraisers are recommended. The consortium sets no universal minimum domain-score threshold.",
+      "scope": "Methodological development quality and reporting of a guideline document.",
+      "caveat": "Domain scores should remain distinct. A benchmark pass threshold is a new protocol choice, not an AGREE-endorsed cutoff; an answer-only product cannot be treated as a complete guideline.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS04",
+      "title": "RIGHT Statement official website",
+      "url": "https://www.right-statement.org/",
+      "verified_date": "2026-10-29",
+      "claim": "RIGHT describes 22 essential reporting items spanning guideline information, background, evidence, recommendations, review, funding/interests and other information.",
+      "scope": "Reporting of healthcare practice guidelines.",
+      "caveat": "The official site states RIGHT is not a quality-assessment instrument for guideline quality; completeness does not establish clinical correctness.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS05",
+      "title": "AMSTAR 2 original instrument paper",
+      "url": "https://www.bmj.com/content/358/bmj.j4008",
+      "verified_date": "2026-10-29",
+      "claim": "AMSTAR 2 assesses systematic reviews including randomized or nonrandomized intervention studies using 16 items and critical-domain weaknesses. Authors explicitly reject deriving an overall numerical score.",
+      "scope": "Methodological appraisal of a completed systematic review of healthcare interventions.",
+      "caveat": "Store original High/Moderate/Low/Critically low judgments, with rationale and critical flaws. Do not call item percentages an AMSTAR2 total or apply it to an isolated short clinical answer.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS06",
+      "title": "ROBIS official resources, University of Bristol",
+      "url": "https://www.bristol.ac.uk/population-health-sciences/projects/robis/",
+      "verified_date": "2026-10-29",
+      "claim": "ROBIS assesses risk of bias in systematic reviews, distinct from risk of bias in primary studies.",
+      "scope": "Systematic-review processes and conclusions.",
+      "caveat": "Keep eligibility/relevance and review-level bias judgments separate from source-study bias; neither a citation count nor reporting completeness substitutes for ROBIS.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS07",
+      "title": "RoB 2 original paper",
+      "url": "https://www.bmj.com/content/366/bmj.l4898",
+      "verified_date": "2026-10-29",
+      "claim": "RoB2 assesses a specific intervention-effect estimate for a particular outcome, endpoint and estimand in a randomized trial.",
+      "scope": "A single numerical result, not a whole paper/trial uniformly.",
+      "caveat": "Timepoint, outcome, ITT/per-protocol and design variants matter. Do not assign one whole-trial score mechanically to all results.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS08",
+      "title": "Cochrane: About risk of bias 2",
+      "url": "https://www.cochrane.org/es/learn/courses-and-resources/cochrane-methodology/risk-bias/about-risk-bias-2-rob-2",
+      "verified_date": "2026-10-29",
+      "claim": "Cochrane clarifies the result-level nature of RoB2 and recommends concentrating assessments on key outcomes/comparisons used in SoF tables.",
+      "scope": "Quantitative results contributing to meta-analysis or synthesis without meta-analysis.",
+      "caveat": "A benchmark wanting exhaustive claim review still needs to predefine which results require formal RoB2 and resource the assessment.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS09",
+      "title": "ROBINS-I V2 official tool page",
+      "url": "https://www.riskofbias.info/welcome/robins-i-v2",
+      "verified_date": "2026-10-29",
+      "claim": "The official page identifies a revised ROBINS-I V2 dated 20 November 2025, still a draft subject to change, for specific intervention results in follow-up/cohort studies.",
+      "scope": "Nonrandomized intervention result; current V2 follow-up/cohort scope.",
+      "caveat": "Freeze tool version and document date; do not silently mix 2016, Nov2024 and Nov2025 judgments. Website states CC BY-NC-ND 4.0 for RoB2, ROBINS-I, ROBINS-E and ROB-ME; preserve originals and review intended licensing.",
+      "verification": "direct_open",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS10",
+      "title": "PRISMA 2020 official statement",
+      "url": "https://www.prisma-statement.org/prisma-2020",
+      "verified_date": "2026-10-29",
+      "claim": "PRISMA2020 provides reporting checklists and flow templates for original and updated systematic reviews.",
+      "scope": "Completeness and transparency of systematic-review reporting.",
+      "caveat": "Reporting guidance is not a conduct or methodological-quality appraisal; keep PRISMA adherence separate from AMSTAR2/ROBIS.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS11",
+      "title": "PRISMA 2020 original statement paper",
+      "url": "https://www.bmj.com/content/372/bmj.n71",
+      "verified_date": "2026-10-29",
+      "claim": "The statement explicitly says PRISMA2020 should not assess review conduct or methodological quality.",
+      "scope": "Systematic review reporting.",
+      "caveat": "Do not equate a complete checklist with trustworthy estimates.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS12",
+      "title": "PRISMA-Search / PRISMA-S official page",
+      "url": "https://www.prisma-statement.org/prisma-search",
+      "verified_date": "2026-10-29",
+      "claim": "The searching extension published in 2021 contains 16 reporting items, including reproducible search documentation.",
+      "scope": "Search reporting in systematic reviews.",
+      "caveat": "A reported query/date is auditable transparency, not empirical proof of recall; benchmark retrieval against an adjudicated eligible corpus.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS13",
+      "title": "WHO handbook for guideline development, 2nd edition",
+      "url": "https://www.who.int/publications/i/item/9789241548960",
+      "verified_date": "2026-10-29",
+      "claim": "WHO supplies a stepwise process for planning, developing and publishing guidelines, with supplementary chapters on decisions, tests and complexity.",
+      "scope": "Guideline governance and development workflow.",
+      "caveat": "A generated recommendation is not a WHO-style guideline without the requisite panel, evidence review, conflict management and contextual judgments. The 2014 publication date must remain visible.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS14",
+      "title": "NICE guideline manual, introduction",
+      "url": "https://www.nice.org.uk/process/pmg20/chapter/introduction",
+      "verified_date": "2026-10-29",
+      "claim": "NICE manual shown as updated 23 October 2025 covers development, maintenance and updating, including evidence reviews, economics, committee recommendations and independent quality assurance.",
+      "scope": "Clinical care, public health and social-care guidelines.",
+      "caveat": "NICE recommendations include context and value judgments; agreement with one guideline is not a universal clinical truth label across regions.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS15",
+      "title": "NICE manual Chapter 6, reviewing evidence",
+      "url": "https://www.nice.org.uk/process/pmg20/chapter/reviewing-evidence",
+      "verified_date": "2026-10-29",
+      "claim": "NICE describes eight review steps: protocol, identification/selection, appraisal, extraction, synthesis, certainty assessment, interpretation and health inequalities.",
+      "scope": "Guideline-supporting evidence reviews.",
+      "caveat": "Review evidence summaries should be distinct from committee interpretation; record deviations and justified reuse of prior review material.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS16",
+      "title": "NICE manual Chapter 9, interpreting evidence",
+      "url": "https://www.nice.org.uk/process/pmg20/chapter/interpreting-the-evidence-and-writing-the-guideline",
+      "verified_date": "2026-10-29",
+      "claim": "Recommendations take account of benefits/harms, certainty, preferences, economics, feasibility and equality; evidence requires interpretation.",
+      "scope": "Recommendation formulation and contextualization.",
+      "caveat": "A stronger effect or higher certainty alone does not determine a recommendation. Distinguish evidence agreement from judgment agreement.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS17",
+      "title": "Cochrane Handbook Chapter 22, prospective accumulation",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-22",
+      "verified_date": "2026-10-29",
+      "claim": "Living reviews require frequent surveillance and timely incorporation of new evidence, rather than merely a recent publication date.",
+      "scope": "Living systematic reviews.",
+      "caveat": "Example monthly frequencies in guidance are illustrative, not universal SLA requirements. Track separate discovery, appraisal and incorporation times.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS18",
+      "title": "Cochrane guidance for living systematic reviews, December 2019",
+      "url": "https://resources.cochrane.org/sites/resources.cochrane.org/files/uploads/inline-files/Transform/201912_LSR_Revised_Guidance.pdf",
+      "verified_date": "2026-10-29",
+      "claim": "Living status requires continual surveillance, continual status updates and an explicit approach to updating the review itself.",
+      "scope": "Living intervention-review lifecycle.",
+      "caveat": "Public freshness labels need audit logs and declared surveillance coverage; not every new study warrants a changed conclusion.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS19",
+      "title": "Cochrane MECIR C42: collating multiple reports",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/mecir-manual/standards-conduct-new-cochrane-intervention-reviews-c1-c75/performing-review-c24-c75/selecting-studies-include-review-c39-c42",
+      "verified_date": "2026-10-29",
+      "claim": "Multiple reports from one study must be collated so that the study is the review unit.",
+      "scope": "Study identity and report linkage.",
+      "caveat": "Count reports, effect rows, participant cohorts and independent studies separately; shared controls/repeated follow-up also require dependence handling.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS20",
+      "title": "Cochrane Handbook Chapter 10, meta-analysis",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-10",
+      "verified_date": "2026-10-29",
+      "claim": "Meta-analysis combines sufficiently compatible study results; heterogeneity, effect-scale selection and sensitivity analyses require judgment. Random-effects estimates describe an average with prediction intervals where defensible.",
+      "scope": "Within a clinically and statistically coherent comparison/outcome/timepoint/estimand cell.",
+      "caveat": "Never pool unrelated diseases or outcomes into a universal treatment effect. Small-k heterogeneity and prediction intervals are uncertain.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS21",
+      "title": "QUADAS-3 official University of Bristol page",
+      "url": "https://www.bristol.ac.uk/population-health-sciences/projects/quadas/quadas-3/",
+      "verified_date": "2026-10-29",
+      "claim": "Official page recommends QUADAS-3 for test-accuracy reviews, published February 2026; latest downloadable version shown as 1.2. It moves assessment to estimate level.",
+      "scope": "Accuracy studies for diagnosis, screening or staging.",
+      "caveat": "Use current QUADAS3 module, not a default QUADAS2 template. Preserve the downloaded version and clarify synthesis questions/ideal test-accuracy study.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS22",
+      "title": "PROBAST+AI original instrument paper",
+      "url": "https://www.bmj.com/content/388/bmj-2024-082505",
+      "verified_date": "2026-10-29",
+      "claim": "PROBAST+AI updates appraisal for regression/AI prediction models, separates development quality from bias in performance evaluation, and considers applicability and fairness.",
+      "scope": "Prediction model development and apparent/internal/external performance evaluation.",
+      "caveat": "This appraises evidence about prediction models; it is not a generic score for the trustworthiness of an LLM answer.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS23",
+      "title": "ROBINS-E official tool page",
+      "url": "https://www.riskofbias.info/welcome/robins-e-tool",
+      "verified_date": "2026-10-29",
+      "claim": "ROBINS-E version 24 March 2024 addresses effects of exposures in observational epidemiological follow-up studies.",
+      "scope": "Environmental, occupational and behavioural exposure results.",
+      "caveat": "Useful for broad-health causal claims; not interchangeable with ROBINS-I intervention appraisal or with mere association extraction.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS24",
+      "title": "GRADE-CERQual official approach",
+      "url": "https://www.cerqual.org/what-is-the-grade-cerqual-approach2/",
+      "verified_date": "2026-10-29",
+      "claim": "CERQual assesses confidence in each qualitative synthesis finding using methodological limitations, coherence, adequacy and relevance.",
+      "scope": "Qualitative review findings about experience, barriers, acceptability or implementation.",
+      "caveat": "Qualitative findings do not need a numeric treatment effect; retain finding-specific categorical confidence.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS25",
+      "title": "Australian Living Evidence Collaboration: Living Guidelines Handbook v1.1, Aug2025",
+      "url": "https://livingevidence.org.au/wp-content/uploads/Living-Guidelines-Handbook-v1.1-Aug2025.pdf",
+      "verified_date": "2026-10-29",
+      "claim": "A living guideline comprises living recommendations updated as information becomes available, supported by continuing evidence surveillance.",
+      "scope": "Living recommendation lifecycle.",
+      "caveat": "Surveillance, review and recommendation revision are separate processes; publish explicit no-change decisions as well as changed versions.",
+      "verification": "search_index",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS26",
+      "title": "Cochrane Methods Report 2026, published 16 September 2026",
+      "url": "https://www.cochrane.org/about-us/news/cochrane-methods-report-2026",
+      "verified_date": "2026-10-29",
+      "claim": "Cochrane reports RAISE version4 released in early March2026 with updated AI taxonomy and responsible-handover guidance. It reports CESAR protocol publication and expected results later in2026.",
+      "scope": "Current responsible-AI framework and methods status.",
+      "caveat": "Version4 release is verified through Cochrane; OSF direct page returned403, so full RAISE4 questionnaire content was not independently retrieved.",
+      "verification": "direct_open",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS27",
+      "title": "RAISE project / Responsible use of AI in evidence synthesis",
+      "url": "https://osf.io/fwaud/",
+      "verified_date": "2026-10-29",
+      "claim": "RAISE is the responsible-AI framework linked from Cochrane's2026 report; v4 early March2026 is identified by Cochrane.",
+      "scope": "Responsible handover, tool selection, validation, disclosure and oversight.",
+      "caveat": "OSF direct access403. Do not imply all current recommendations were read directly; use Cochrane's account and retrieve/freeze actual v4 documents before instrument implementation.",
+      "verification": "linked_official_or_author_repository",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS28",
+      "title": "Cochrane: Right tool, right job, 15June2026",
+      "url": "https://www.cochrane.org/about-us/news/right-tool-right-job-deciding-when-not-use-ai-tool",
+      "verified_date": "2026-10-29",
+      "claim": "Four expectations are author responsibility, preserved methodological rigor/integrity, transparent reporting and human oversight. Selection examines purpose, data provenance, contextual validation, usability and transparency; context-specific performance thresholds lack community consensus.",
+      "scope": "Practical implementation of RAISE3 and tool-use decisions.",
+      "caveat": "This is implementation guidance, not clinical validation of every tool. CESAR stopping thresholds shown there belong to that study and must not be presented as universal acceptable-performance cutoffs.",
+      "verification": "direct_open",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS29",
+      "title": "Cochrane: What makes the new AI study innovative, 17April2026",
+      "url": "https://www.cochrane.org/about-us/news/what-makes-cochranes-new-ai-study-innovative",
+      "verified_date": "2026-10-29",
+      "claim": "CESAR embeds AI-tool comparisons in roughly15Cochrane review updates, using an adaptive platform SWAR allowing additions/removals of tools and examining downstream errors, accuracy, stability, efficiency and usability.",
+      "scope": "Prospective workflow evaluation rather than one-time static tests.",
+      "caveat": "The April post describes a study/protocol and novelty claims by its authors, not completed outcome evidence or a validated universal benchmark.",
+      "verification": "direct_open",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS30",
+      "title": "CESAR protocol, Journal of Clinical Epidemiology, doi10.1016/j.jclinepi.2026.112390",
+      "url": "https://doi.org/10.1016/j.jclinepi.2026.112390",
+      "verified_date": "2026-10-29",
+      "claim": "The protocol specifies a master adaptive platform SWAR comparing tools with human-only processes for title/abstract screening, full-text screening and extraction. Evaluations include accuracy, time, response stability, error impacts and usability.",
+      "scope": "Task and workflow validation in ongoing reviews.",
+      "caveat": "Protocol publication is not proof of performance; cite study status accurately. Publisher full text returned403; author repository abstract and accepted-manuscript metadata were accessible.",
+      "verification": "linked_official_or_author_repository",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "CS31",
+      "title": "UCL author repository: CESAR protocol record",
+      "url": "https://discovery.ucl.ac.uk/id/eprint/10227665/",
+      "verified_date": "2026-10-29",
+      "claim": "Repository confirms JCE Article112390, DOI, accepted version available and study design; describes the comparator as two trained researchers independently completing each step.",
+      "scope": "Primary author-repository record supporting CESAR design.",
+      "caveat": "Record labels article Inpress. Main benchmark reference should additionally use independently adjudicated disagreements and clinicians/methodologists for material issues; that adjudication policy is our proposal, not a quoted CESAR requirement.",
+      "verification": "direct_open",
+      "research_file": "clinical_standards.json"
+    },
+    {
+      "id": "N01",
+      "title": "Cochrane Handbook Chapter IV: Updating a review",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-iv",
+      "verified_date": "2026-10-29",
+      "source_type": "official handbook",
+      "claim": "定期判断是否需要更新；以问题重要性、新资料或新方法对结论的实质影响决定，而非机械追逐发表日期。更新仍须遵从系统综述方法。",
+      "caveat": "指导的是综述更新流程，不提供已验证的产品live评分。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N02",
+      "title": "Cochrane Handbook Chapter 22: Prospective approaches to accumulating evidence",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-22",
+      "verified_date": "2026-10-29",
+      "source_type": "official handbook",
+      "claim": "Living综述需要持续监测并及时纳入新证据，预先说明检索和更新频率。正式序贯统计方法通常不应用于标准更新meta分析的主分析或主要结论。",
+      "caveat": "月度检索和月内纳入是示例，不是所有领域统一时效阈值；不能把TSA当通用稳定性金标准。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N03",
+      "title": "Guidance for Cochrane living systematic reviews (2019)",
+      "url": "https://resources.cochrane.org/sites/resources.cochrane.org/files/uploads/inline-files/Transform/201912_LSR_Revised_Guidance.pdf",
+      "verified_date": "2026-10-29",
+      "source_type": "official guidance",
+      "claim": "Living是更新方式；需主动监测、按预设规则及时纳入重要资料，并公开当前状态和待纳入证据。",
+      "caveat": "2019指导，应结合当前手册和PRISMA-LSR使用。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N04",
+      "title": "PRISMA-Living Systematic Reviews",
+      "url": "https://www.prisma-statement.org/lsr",
+      "verified_date": "2026-10-29",
+      "source_type": "official reporting standard",
+      "claim": "PRISMA-LSR于2024发表，是PRISMA 2020补充，主要面向干预效果living综述，也可用于其他目标及常规更新。",
+      "caveat": "报告完整性不等于方法学质量或临床有效性。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N05",
+      "title": "PROGRESS-Plus — Cochrane Equity",
+      "url": "https://methods.cochrane.org/equity/projects/evidence-equity/progress-plus",
+      "verified_date": "2026-10-29",
+      "source_type": "official methods group",
+      "claim": "公平性因素包括居住地、种族/族裔/文化/语言、职业、性别/生理性别、宗教、教育、社会经济地位、社会资本；Plus包括年龄、残障、关系和时间情境等。",
+      "caveat": "这是识别健康机会/结局分层因素的框架，不是按全球人口比例打分的通用量表。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N06",
+      "title": "GRADE Equity Guidelines 4: Guidance on how to assess and address health equity within the evidence to decision process",
+      "url": "https://doi.org/10.1016/j.jclinepi.2017.08.001",
+      "verified_date": "2026-10-29",
+      "source_type": "original methodology paper",
+      "claim": "EtD应考虑对公平性的潜在影响；不同人群基线风险可导致绝对获益不同，应结合可接受性、可行性及资源条件。",
+      "caveat": "缺乏亚组研究本身不自动证明相对效果不同；不应无充分依据机械下调间接性。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N07",
+      "title": "FDA Diversity Action Plans — June 2024 draft guidance",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/diversity-action-plans-improve-enrollment-participants-underrepresented-populations-clinical-studies",
+      "verified_date": "2026-10-29",
+      "source_type": "official draft guidance",
+      "claim": "临床研究代表性和招募计划是监管关注的议题，可作为benchmark人口覆盖字段的背景。",
+      "caveat": "所核验官方页明确标Draft / Not for implementation / non-binding。不得写成当前最终指导或全球通用法律要求；该页还披露法院恢复历史版本安排。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N08",
+      "title": "Sex and Gender Equity in Research (SAGER) — EQUATOR",
+      "url": "https://www.equator-network.org/reporting-guidelines/sager-guidelines/",
+      "verified_date": "2026-10-29",
+      "source_type": "official reporting-guideline registry",
+      "claim": "SAGER涉及设计、分析、结果和解释中的sex/gender报告。",
+      "caveat": "Sex与gender不是可互换字段；只提取研究确实报告的内容。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N09",
+      "title": "Cochrane Handbook Chapter 10: Analysing data and undertaking meta-analyses",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-10",
+      "verified_date": "2026-10-29",
+      "source_type": "official handbook",
+      "claim": "选择合适效应尺度、考虑异质性、检验敏感性；亚组差异应以组间比较或交互检验评估，不能从一组显著而另一组不显著推出差异。",
+      "caveat": "本来源支持兼容性和敏感性原则，不支持将不相干疾病效应量合成一个临床效果。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N10",
+      "title": "Cochrane Handbook Chapter 15: Interpreting results and drawing conclusions",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+      "verified_date": "2026-10-29",
+      "source_type": "official handbook",
+      "claim": "结论应结合效应大小、置信区间和临床重要性；合适情况下可用已建立的MID帮助解释。",
+      "caveat": "MID依结局、量表及情境；个体内变化阈值不可不加审查充当组间平均效应的阈值。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N11",
+      "title": "ICEMAN: Instrument to assess credibility of effect modification analyses",
+      "url": "https://iceman.help/",
+      "verified_date": "2026-10-29",
+      "source_type": "instrument developers",
+      "claim": "提供RCT及RCT meta分析中效应修饰可信度的判断工具。",
+      "caveat": "不是人口代表性评分；有覆盖也不等于亚组效应已被精确估计。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N12",
+      "title": "Crossmark — Crossref",
+      "url": "https://www.crossref.org/services/crossmark/",
+      "verified_date": "2026-10-29",
+      "source_type": "official metadata provider",
+      "claim": "可查询更正、撤稿或更新关系并通过API获取状态元资料。",
+      "caveat": "提供Crossmark并非质量保证，未发现记录也不证明无更正/撤稿。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N13",
+      "title": "Retraction Watch data — Crossref",
+      "url": "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+      "verified_date": "2026-10-29",
+      "source_type": "official metadata provider",
+      "claim": "撤稿数据工作日更新，可经API或全量数据获取；也含部分更正、关注声明和恢复记录。",
+      "caveat": "更正和关注声明覆盖不及撤稿；须核验出版者原始通知。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N14",
+      "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
+      "url": "https://arxiv.org/abs/2411.00640",
+      "verified_date": "2026-10-29",
+      "source_type": "original statistical methods preprint",
+      "claim": "将评测视为实验，讨论模型差异、不确定性和评测设计/功效。",
+      "caveat": "统计方法论文预印本，不是医疗benchmark临床验证证据。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N15",
+      "title": "EXACT BINOMIAL — NIST Dataplot",
+      "url": "https://itl.nist.gov/div898/software/dataplot/refman2/auxillar/exacbino.htm",
+      "verified_date": "2026-10-29",
+      "source_type": "official statistical reference",
+      "claim": "可对二项比例计算单侧或双侧精确置信限。",
+      "caveat": "二项独立观测假设必须成立；同一临床问题下多条claims并非独立。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "N16",
+      "title": "NIST AI 600-1: Generative Artificial Intelligence Profile",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "verified_date": "2026-10-29",
+      "source_type": "official voluntary risk-management profile",
+      "claim": "生成式AI的可信性包括信息完整性、有效可靠、透明、偏差管理，以及对过度信任的关注。",
+      "caveat": "风险管理框架不是临床准确性认证。",
+      "research_file": "novel_metrics.json"
+    },
+    {
+      "id": "LAND-01",
+      "title": "SciConBench / Can AI Agents Synthesize Scientific Conclusions?",
+      "url": "https://sciconbench.cs.princeton.edu/",
+      "alternate_primary_urls": [
+        "https://arxiv.org/abs/2606.11337",
+        "https://github.com/hayoungjungg/SciConBench"
+      ],
+      "source_type": "研究团队官方项目、原始预印本与代码",
+      "verification": "项目搜索索引提供详细正文，直接open曾403；官方GitHub已成功读取",
+      "published_date": "2026-06-09 initial preprint; project October 2026 release",
+      "task": "开放网络科学结论综合，基于Cochrane综述的问题与专家结论",
+      "claim": "已存在明确的live agentic evidence-synthesis benchmark。使用clean-room harness阻断目标综述及泄露答案来源，将结论分解为atomic facts，以事实precision、recall、F1评分；固定core与新发表rolling panels并存。",
+      "borrow": "冻结核心+滚动新题；阻断目标综述与摘要镜像；逐原子断言核验；保留工具轨迹；固定控制模型识别题目难度漂移。",
+      "limit": "参考结论与Cochrane内容不等于无争议真相；自动judge须经专家校准；该项目不能证明所有证据生产维度已解决。不得将新框架称首个live证据benchmark。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-02",
+      "title": "MedSR-Copilot / MedSR-Bench: A PRISMA-Aligned Agentic Framework for Medical Systematic Reviews and Evidence Synthesis",
+      "url": "https://github.com/MAGIC-AI4Med/MedSR-Copilot",
+      "alternate_primary_urls": [
+        "https://www.medrxiv.org/content/10.64898/2026.07.30.26359375v1.full",
+        "https://huggingface.co/datasets/halfmorepiece/MedSR-Bench"
+      ],
+      "source_type": "原始研究预印本及官方代码",
+      "verification": "官方GitHub正文已读取；medRxiv正文直接open曾403",
+      "task": "PICOS协议驱动的检索、分层筛选、数值提取、RoB及统计综合",
+      "claim": "代码描述端到端PRISMA aligned流程，输出合并效应估计、forest plot和可追溯中间记录，支持人类检查及修改。MedSR-Bench用于评价端到端流程。",
+      "borrow": "阶段产物+最终效应量联合评价；系统综述赛道必须审计中间步骤；自动与人工修改后的产物分开。",
+      "limit": "开发团队研究与自报性能，预印本状态；PRISMA aligned不是有效性认证；不得宣称首个端到端医疗证据benchmark。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-03",
+      "title": "MedEvidence: Can Large Language Models Match the Conclusions of Systematic Reviews?",
+      "url": "https://arxiv.org/abs/2505.22787",
+      "alternate_primary_urls": [
+        "https://arxiv.org/html/2505.22787v1",
+        "https://github.com/zy-f/med-evidence"
+      ],
+      "source_type": "原始研究预印本及代码",
+      "published_date": "2025-05-28",
+      "verification": "原始HTML全文已读取",
+      "task": "给定系统综述的同组原始研究，匹配专家结论",
+      "claim": "100篇SR配对其依据研究，比较24个LLM；直接测试多文献结论综合，而非仅医考知识。",
+      "borrow": "给定相同来源的closed-corpus综合赛道；记录不确定性与不充分证据的识别；抽象与全文条件分开。",
+      "limit": "评的是参考条件下结论匹配，不自动证明检索完整、计算正确、正式GRADE或指南决策质量。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-04",
+      "title": "MedMeta: A Benchmark for LLMs in Synthesizing Meta-Analysis Conclusion",
+      "url": "https://arxiv.org/abs/2605.09661",
+      "alternate_primary_urls": [
+        "https://arxiv.org/html/2605.09661v1"
+      ],
+      "source_type": "原始研究预印本",
+      "published_date": "2026-05-10",
+      "verification": "原始HTML全文已读取",
+      "task": "从medical meta-analysis相关来源生成结论，比较parametric及多种RAG条件",
+      "claim": "81篇meta-analysis；含golden与negated evidence等条件；对语义相似度和LLM judge做人工验证。",
+      "borrow": "引入错误/相反证据扰动；将数值正确、临床方向、确定性与文本相似度分开；参考检索与实际检索分开。",
+      "limit": "预印本开发者评估；不是完整筛选、独立研究去重与效应计算审计。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-05",
+      "title": "EviSearch: Trustworthy Extraction and Synthesis of Clinical Trial Evidence with Agents that Improve with Use",
+      "url": "https://arxiv.org/abs/2604.14165v3",
+      "source_type": "原始研究预印本，v3更新",
+      "published_date": "2026-03-23 initial; 2026-09-27 v3",
+      "verification": "arXiv原始摘要与版本记录已读取",
+      "task": "RCT结构化数据提取、页级归因与分歧导向人工复核",
+      "claim": "多个互补agent提取证据表，归因验证器检查每个值的引用页，按agent分歧安排人类复核，反馈改进schema/curation而不改模型参数。",
+      "borrow": "逐cell provenance、复核工作量与残余错误率曲线；同等人工预算比较；自主输出与复核后输出分榜。",
+      "limit": "自报性能不能直接搬到新benchmark；其当前v3标题与v1不同，必须记录版本；页级归因存在不等于数值或临床解释正确。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-06",
+      "title": "Knowledge Synthesis Review Framework: Task-Level Benchmarking of LLM-Based Systems for Multi-Source Evidence Synthesis",
+      "url": "https://arxiv.org/abs/2608.12741",
+      "source_type": "原始研究预印本",
+      "published_date": "2026-08-13",
+      "verification": "原始摘要已读取",
+      "task": "AI与工作主题的多源screening、extraction、analysis、synthesis，人机协作路由",
+      "claim": "将证据综合分任务与专家标准比较，纳入不同来源类型；指出没有系统在全部任务领先。",
+      "borrow": "不同任务单独检验；人工监督与模型路由本身作为system configuration记录；检查来源结构造成的盲区。",
+      "limit": "主题不是临床效应或指南；不能外推其准确率到医疗，不能直接作为医学公认标准。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-07",
+      "title": "OpenScholar / ScholarQABench",
+      "url": "https://allenai.org/blog/nature-openscilm",
+      "alternate_primary_urls": [
+        "https://www.nature.com/articles/s41586-025-10072-4",
+        "https://arxiv.org/abs/2411.14199"
+      ],
+      "source_type": "Ai2官方研究公告、原始Nature论文及预印本",
+      "published_date": "2026-02-04 Nature announcement",
+      "verification": "研究团队公告全文已读取；Nature直接open曾受限",
+      "task": "跨学科科学检索、长文综合与citation quality",
+      "claim": "多领域ScholarQABench评价科学综合和引用质量，包含biomedicine及neuroscience；不同于医考QA。",
+      "borrow": "引用存在、引用支持断言、引用覆盖率与综述内容正确性分别评分；长答案需控制verbosity的偏好。",
+      "limit": "不是完整临床SR/GRADE/指南制定工具；作者与系统同源，不能把其系统性能当独立排名。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-08",
+      "title": "MedHELM",
+      "url": "https://www.nature.com/articles/s41591-025-04151-2",
+      "alternate_primary_urls": [
+        "https://crfm.stanford.edu/helm/medhelm/v2.0.0/",
+        "https://arxiv.org/abs/2505.23802",
+        "https://hai.stanford.edu/news/measuring-what-medical-ai-can-actually-do"
+      ],
+      "source_type": "原始Nature Medicine论文、Stanford官方项目与公告",
+      "published_date": "2026-01-20 final paper",
+      "verification": "Stanford项目索引与官方公告可读；Nature全文open受限",
+      "task": "临床决策、文书、患者沟通、研究辅助、管理五类医疗工作",
+      "claim": "task taxonomy先行，覆盖22子类、121临床任务；早期项目页面为35 benchmarks，2026正式论文/Stanford公告为37，必须绑定版本。",
+      "borrow": "任务矩阵和多维结果；公开/受限/私有测试集并用；成本与表现一起报告；评审模型先与临床评审验证。",
+      "limit": "多任务平均或pairwise win rate不是患者获益，也不是证据确定性；不同版本不能直接比较。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-09",
+      "title": "MIRAGE: Benchmarking Retrieval-Augmented Generation for Medicine",
+      "url": "https://github.com/gzxiong/MIRAGE",
+      "alternate_primary_urls": [
+        "https://arxiv.org/abs/2402.13178"
+      ],
+      "source_type": "原始论文与官方代码",
+      "verification": "官方GitHub正文已读取",
+      "task": "医学QA的retrieval-augmented generation组件比较",
+      "claim": "在多个医学QA数据集上评价RAG，允许拆解retriever、corpus和generator对最终答案的影响。",
+      "borrow": "同一模型不同检索资源作为不同系统；closed corpus与open retrieval分赛道；oracle retrieval定位检索损失与推理损失。",
+      "limit": "主要是医学QA，不等于长期living evidence、效应量复算或正式确定性评价。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-10",
+      "title": "PubMedQA",
+      "url": "https://pubmedqa.github.io/",
+      "alternate_primary_urls": [
+        "https://arxiv.org/abs/1909.06146"
+      ],
+      "source_type": "原始数据集项目及论文",
+      "verification": "官方项目正文已读取",
+      "task": "根据对应摘要回答yes/no/maybe的生物医学研究问题",
+      "claim": "经典研究问答资源，包含专家标注、未标注及人工生成部分。",
+      "borrow": "用作基础理解诊断，不用作主要临床证据排名；训练、验证、测试严格分开。",
+      "limit": "单摘要答案与多研究综合、本体研究重复、效应量、GRADE、指南推荐明显不同；老公开题污染风险高。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-11",
+      "title": "MedQA",
+      "url": "https://github.com/jind11/MedQA",
+      "source_type": "原始数据集项目及论文",
+      "verification": "官方GitHub正文已读取",
+      "task": "US、中国大陆及台湾医学执照考试选择题，配教材语料",
+      "claim": "医学知识与病例推理benchmark，有官方train/dev/test和4/5选项条件。",
+      "borrow": "用于基础能力旁证，测试配置必须声明题目版本与选项数。",
+      "limit": "考试高分不能证明证据综述准确、检索全面或临床有效；2026已有公开讨论可恢复测试内容的污染风险。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-12",
+      "title": "HealthBench / HealthBench Professional",
+      "url": "https://arxiv.org/abs/2505.08775",
+      "alternate_primary_urls": [
+        "https://arxiv.org/abs/2604.27470",
+        "https://huggingface.co/datasets/openai/healthbench-professional"
+      ],
+      "source_type": "原始研究论文及研究者官方数据卡；非产品文档",
+      "verification": "原始论文搜索摘要及官方数据卡索引已核；本记录不含模型选择/价格/使用指导",
+      "task": "开放式健康对话的医生rubric；Professional聚焦care consult、writing/documentation、medical research",
+      "claim": "从医考选择题扩展到问题专属医生rubric，并有负分criteria；Professional增加临床真实任务及长度校正。",
+      "borrow": "逐题临床rubric、危险遗漏负面标准、输出长度偏差检查、自动judge经人类验证。",
+      "limit": "rubric adherence不是临床安全认证；不等于系统综述方法学或效应估计正确。使用原始研究时仍要审视公开题污染、开发方judge affinity和难度富集。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-13",
+      "title": "General-purpose large language models outperform specialized clinical AI tools on medical benchmarks",
+      "url": "https://www.nature.com/articles/s41591-026-04431-5",
+      "source_type": "同行评审原始研究",
+      "published_date": "2026-06-12",
+      "verification": "Nature原始正文已读取",
+      "task": "MedQA、HealthBench与100 real clinical queries；比较OpenEvidence、UpToDate Expert AI及generalist LLMs",
+      "claim": "RCQ含12位美国临床评审随机盲评；论文在其测试条件下报告generalist优势。",
+      "borrow": "真实临床query、盲法随机呈现、多个医生、预定统计、成本报告；保留具体系统访问时间和生成设置。",
+      "limit": "已有2026-09 Matters Arising；不能把其结果外推所有任务/版本/国家，也不能混用厂商后台更新后的系统。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-14",
+      "title": "Limited benchmarks constrain the conclusions of a general-purpose versus clinical AI comparison",
+      "url": "https://www.nature.com/articles/s41591-026-04638-6",
+      "alternate_primary_urls": [
+        "https://www.nature.com/articles/s41591-026-04637-7"
+      ],
+      "source_type": "Nature Medicine Matters Arising及原作者回复",
+      "published_date": "2026-09-03",
+      "verification": "Nature原始搜索索引含详细文章与回复正文；直接open受限",
+      "task": "对LAND-13方法和外推范围的公开争论",
+      "claim": "质疑公开MedQA污染、HealthBench evaluator affinity、真实题覆盖、精度表达和生成设置；回复承认公共题局限，同时维持RCQ条件内主要结论。",
+      "borrow": "采集prompt、temperature/reasoning、token budget、版本与工具；病例/评审聚类不独立处理；限制排名外推；允许第三方审计、异议及修订。",
+      "limit": "评论与回复本身不是一套新的全部比较实测；不作产品赢家证据。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-15",
+      "title": "Expert Evaluation of Clinical AI Tools on Real Point-of-Care Clinical Queries / Real-POCQi",
+      "url": "https://arxiv.org/abs/2606.28960",
+      "alternate_primary_urls": [
+        "https://arxiv.org/html/2606.28960v1",
+        "https://huggingface.co/datasets/jjfenglab/Real-POCQi",
+        "https://github.com/jjfenglab/Real-POCQi-statistics"
+      ],
+      "source_type": "原始预印本、公开数据及预指定统计代码",
+      "published_date": "2026-06-27",
+      "verification": "原始HTML全文含利益冲突声明已读取",
+      "task": "来自OpenEvidence的620真实问句及187 HealthBench问题，专科医生配对评分",
+      "claim": "149位执业医生、五个轴：准确、临床有用性、来源质量、可核验、完整；报告专科工具优势，区别于LAND-13的结果。",
+      "borrow": "专科匹配评审；呈现引用/隐藏引用和长度敏感性分析；公开问题、答案、评分和预指定分析。",
+      "limit": "预印本；OE共同制定收集计划、执行收集并支付医生，虽作者称无OE任职且统计盲法，仍有商业参与。不同模型、题目分布及条件无法直接与RCQ拼接排名。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-16",
+      "title": "Consensus: How Consensus Works",
+      "url": "https://help.consensus.app/en/articles/9922673-how-consensus-works",
+      "source_type": "厂商官方功能文档",
+      "published_date": "2026-09-10",
+      "verification": "官方帮助全文已读取",
+      "task": "学术检索、带引用回答、多步research agent、Deep Review",
+      "claim": "先检索文献再综合，部分全文访问，提供引用及相关检索/比较功能。",
+      "borrow": "列入检索/快速回答/多文献综合赛道；按实际交付声明评价；保存账户等级、搜索模式、可访问语料和日期。",
+      "limit": "功能说明是厂商陈述，不能替代独立准确性验证；文献赞成比例不等于meta-analysis合并效应，期刊/引用数不是RoB。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-17",
+      "title": "Elicit: Systematic Reviews / workflow selection",
+      "url": "https://support.elicit.com/en/articles/14759154-systematic-reviews-in-elicit",
+      "alternate_primary_urls": [
+        "https://support.elicit.com/en/articles/14757543-getting-started-with-elicit-which-workflow-should-i-use"
+      ],
+      "source_type": "厂商官方帮助文档",
+      "published_date": "2026-09-16 systematic review documentation; workflows updated October 2026",
+      "verification": "官方帮助全文已读取",
+      "task": "research agent及设定问题、检索、标题摘要/全文筛选、提取、报告工作流",
+      "claim": "提供语义/关键词搜索、筛选与提取source quotes、人工覆盖与部分方案dual review、导出和审计记录。",
+      "borrow": "同品牌不同workflow分开评；记录plan、Fast/Thorough、全文解析、默认纳入报告上限及是否人类复核。",
+      "limit": "厂商省时/准确声明不作为独立结果；报告所用论文可有默认上限，完整性必须核查真实覆盖而非报告标题。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-18",
+      "title": "Scite API / Smart Citations",
+      "url": "https://scite.ai/api",
+      "source_type": "厂商官方产品/API描述",
+      "verification": "官方正文已读取",
+      "task": "文献/引用语境检索、supporting/contrasting/mentioning分类、来源回答、撤稿标记",
+      "claim": "可输出带引用回答、citation statements/tallies及reference-check flags。",
+      "borrow": "可为引用核验和反证发现提供输入；以真实citation context核验claim。",
+      "limit": "supporting/contrasting的引用计数不是独立研究数、偏倚风险、GRADE或合并效应；厂商覆盖/速度数字不作为测评结果。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-19",
+      "title": "ASReview simulation and benchmarking",
+      "url": "https://asreview.nl/simulate/",
+      "alternate_primary_urls": [
+        "https://asreview.readthedocs.io/en/stable/lab/simulation_overview.html",
+        "https://www.nature.com/articles/s42256-020-00287-7"
+      ],
+      "source_type": "开源项目官方文档及原始研究",
+      "verification": "官方文档索引与页面已核",
+      "task": "已标注数据的active-learning screening模拟",
+      "claim": "支持recall、loss、work saved over sampling、time to discovery等筛选与工作量指标，支持多配置模拟。",
+      "borrow": "高recall约束下工作量节省；完整标注验证集与固定停止规则；随机种子与先验种子记录。",
+      "limit": "oracle-label模拟不能等同真实人类标注错误和实际停止规则；不是最终结论、效应量或指南质量评价。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-20",
+      "title": "Cochrane 2026 AI evidence-synthesis platform study",
+      "url": "https://www.cochrane.org/about-us/news/cochrane-launches-innovative-study-assess-ai-tools-evidence-synthesis",
+      "alternate_primary_urls": [
+        "https://www.cochrane.org/about-us/news/how-did-cochrane-select-ai-tools-evaluate-our-platform-study"
+      ],
+      "source_type": "Cochrane官方研究公告与工具选择说明",
+      "published_date": "2026-02-19; selection explanation 2026-03-11",
+      "verification": "官方全文已读取",
+      "task": "AI与dual-human标准同时比较，主要screening及data extraction",
+      "claim": "采用独立、前瞻、可复现的platform study，预先约定性能与不确定性阈值，可增删工具；初期计划约15篇Cochrane更新。选择公告强调厂商申请数据不是实测结论。",
+      "borrow": "平台协议可持续纳入新工具；独立数据委员会、预注册阈值与人工标准；公开厂商自报与独立评价身份。",
+      "limit": "查阅的是研究设计公告，不是结果；不能报告研究已达成预期或工具已获认证。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-21",
+      "title": "HELM: Holistic Evaluation of Language Models",
+      "url": "https://arxiv.org/abs/2211.09110v2",
+      "source_type": "原始研究，TMLR 2023",
+      "verification": "原始摘要与论文元数据已读取",
+      "task": "多场景、多指标统一条件下LLM评价",
+      "claim": "同时衡量accuracy、calibration、robustness、fairness、bias、toxicity、efficiency，公开prompts与completions，计划living扩展。",
+      "borrow": "先定义任务和指标矩阵，密集覆盖而非只挑优势；公开共同条件和原始产物；展示trade-offs。",
+      "limit": "不能把七轴机械转换为临床证据质量，也不宜由单一mean隐藏重大安全缺陷。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-22",
+      "title": "MLPerf Inference Rules",
+      "url": "https://github.com/mlcommons/inference_policies/blob/master/inference_rules.adoc",
+      "alternate_primary_urls": [
+        "https://docs.mlcommons.org/inference/submission/"
+      ],
+      "source_type": "MLCommons官方benchmark规则",
+      "verification": "官方规则正文已读取",
+      "task": "定义system under test、workload、质量与延迟约束、可复现及审计规则",
+      "claim": "区分Closed/Open等division；要求一致系统、共享实现、可复现，禁止benchmark detection和按测试输入专门优化；性能受准确性及延迟约束。",
+      "borrow": "定义系统而非只模型名；冻结检索/工具条件赛道与开放系统赛道；质量达标后看速度成本；保留审计和公开提交材料。",
+      "limit": "医学借用的是benchmark治理思想，不能称MLPerf医疗认证；MLPerf Closed/Open不是本项目closed corpus/open web的同义词。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "LAND-23",
+      "title": "SPEC CPU 2017 Run and Reporting Rules",
+      "url": "https://spec.org/cpu2017/Docs/runrules.html",
+      "source_type": "SPEC官方benchmark规则",
+      "verification": "官方规则正文已读取",
+      "task": "标准化运行、环境披露、base/peak、重复测量、geometric-mean比率与公布要求",
+      "claim": "结果须可比较、可复现并符合测试日期规则；披露环境，base为规定条件；以重复运行选取结果，几何平均相对参考性能比。",
+      "borrow": "不可仅写模型名称；配置与时间戳进入结果身份；基线和优化配置分开；完整suite不能挑题；实测与估计清楚区分。",
+      "limit": "几何平均适合无量纲正比率，不应直接合并GRADE等级、不同疾病临床效应量或ordinal方法学等级；医疗复合分需额外验证。",
+      "verified_date": "2026-10-29",
+      "research_file": "landscape.json"
+    },
+    {
+      "id": "R01",
+      "title": "OpenEvidence enterprise portal",
+      "url": "https://portal.openevidence.com/",
+      "source_type": "厂商官方产品页面",
+      "verification": "搜索索引正文",
+      "claim": "用于确认临床证据产品和来源定位。",
+      "caveat": "市场与性能宣传不作为独立验证；本项目未实测该产品。",
+      "verified_date": "2026-10-29",
+      "research_file": "root-sources.json"
+    },
+    {
+      "id": "R02",
+      "title": "UpToDate Expert AI product page",
+      "url": "https://www.wolterskluwer.com/en/solutions/uptodate/pro/uptodate/uptodate-pro-plus",
+      "source_type": "厂商官方产品页面",
+      "verification": "搜索索引正文",
+      "claim": "用于确认产品定位。",
+      "caveat": "不把厂商自评结果混入独立榜单；访问和结果公开需适用权限。",
+      "verified_date": "2026-10-29",
+      "research_file": "root-sources.json"
+    },
+    {
+      "id": "R03",
+      "title": "UpToDate editorial policy",
+      "url": "https://www.wolterskluwer.com/en/solutions/uptodate/policies-legal/editorial-policy",
+      "source_type": "厂商官方方法说明",
+      "verification": "搜索索引正文",
+      "claim": "人类撰写/编辑的知识内容与生成式回答层须分别评价；内容使用结构化问题、证据综合及多层复核。",
+      "caveat": "编辑政策不等于每次生成输出都经人工审定。",
+      "verified_date": "2026-10-29",
+      "research_file": "root-sources.json"
+    },
+    {
+      "id": "R04",
+      "title": "Wolters Kluwer clinical AI validation framework",
+      "url": "https://www.wolterskluwer.com/en/news/validation-framework-evaluating-clinical-ai-point-of-care",
+      "source_type": "厂商官方自评公告，2026-05-21",
+      "verification": "搜索索引正文",
+      "claim": "厂商已有临床意图、知识忠实性及临床影响框架，支持本项目记录标准来源和利益冲突。",
+      "caveat": "厂商自报性能不是独立结果，也不能和题目级准确率直接比较。",
+      "verified_date": "2026-10-29",
+      "research_file": "root-sources.json"
+    },
+    {
+      "id": "R05",
+      "title": "TRIPOD-LLM statement",
+      "url": "https://www.tripod-statement.org/wp-content/uploads/2025/01/TRIPOD-LLM-Article.pdf",
+      "source_type": "原始报告规范，Nature Medicine 2025",
+      "verification": "搜索索引全文片段",
+      "claim": "记录LLM研究版本、设置、评审及透明报告；本身不是质量评价工具。",
+      "caveat": "报告充分不等于结果正确。",
+      "verified_date": "2026-10-29",
+      "research_file": "root-sources.json"
+    },
+    {
+      "id": "R06",
+      "title": "FUTURE-AI international consensus guideline",
+      "url": "https://www.bmj.com/content/388/bmj-2024-081554",
+      "source_type": "原始国际共识，BMJ 2025",
+      "verification": "搜索索引正文",
+      "claim": "医疗AI评价需关注公平、普适、可追踪、可用、稳健和可解释；benchmark与临床效用研究分别进行。",
+      "caveat": "不能由benchmark高分推断真实患者获益或监管批准。",
+      "verified_date": "2026-10-29",
+      "research_file": "root-sources.json"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{"verified_date":"2026-10-29","sources":[
+{"id":"R01","title":"OpenEvidence enterprise portal","url":"https://portal.openevidence.com/","source_type":"厂商官方产品页面","verification":"搜索索引正文","claim":"用于确认临床证据产品和来源定位。","caveat":"市场与性能宣传不作为独立验证；本项目未实测该产品。"},
+{"id":"R02","title":"UpToDate Expert AI product page","url":"https://www.wolterskluwer.com/en/solutions/uptodate/pro/uptodate/uptodate-pro-plus","source_type":"厂商官方产品页面","verification":"搜索索引正文","claim":"用于确认产品定位。","caveat":"不把厂商自评结果混入独立榜单；访问和结果公开需适用权限。"},
+{"id":"R03","title":"UpToDate editorial policy","url":"https://www.wolterskluwer.com/en/solutions/uptodate/policies-legal/editorial-policy","source_type":"厂商官方方法说明","verification":"搜索索引正文","claim":"人类撰写/编辑的知识内容与生成式回答层须分别评价；内容使用结构化问题、证据综合及多层复核。","caveat":"编辑政策不等于每次生成输出都经人工审定。"},
+{"id":"R04","title":"Wolters Kluwer clinical AI validation framework","url":"https://www.wolterskluwer.com/en/news/validation-framework-evaluating-clinical-ai-point-of-care","source_type":"厂商官方自评公告，2026-05-21","verification":"搜索索引正文","claim":"厂商已有临床意图、知识忠实性及临床影响框架，支持本项目记录标准来源和利益冲突。","caveat":"厂商自报性能不是独立结果，也不能和题目级准确率直接比较。"},
+{"id":"R05","title":"TRIPOD-LLM statement","url":"https://www.tripod-statement.org/wp-content/uploads/2025/01/TRIPOD-LLM-Article.pdf","source_type":"原始报告规范，Nature Medicine 2025","verification":"搜索索引全文片段","claim":"记录LLM研究版本、设置、评审及透明报告；本身不是质量评价工具。","caveat":"报告充分不等于结果正确。"},
+{"id":"R06","title":"FUTURE-AI international consensus guideline","url":"https://www.bmj.com/content/388/bmj-2024-081554","source_type":"原始国际共识，BMJ 2025","verification":"搜索索引正文","claim":"医疗AI评价需关注公平、普适、可追踪、可用、稳健和可解释；benchmark与临床效用研究分别进行。","caveat":"不能由benchmark高分推断真实患者获益或监管批准。"}
+]}

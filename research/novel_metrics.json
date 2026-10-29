@@ -1,0 +1,364 @@
+{
+  "component": "CEB proposal — Live / Stability / Coverage / Statistical inference",
+  "verified_date": "2026-10-29",
+  "status": "Research-informed proposed operational definitions; not a validated clinical instrument; no products tested.",
+  "governing_distinctions": [
+    "底层证据的确定性、代表性和脆弱性，与模型/人工交付是否忠实、完整、恰当，必须分别记录。正确报告证据不足可获得高交付质量；不能把低GRADE当模型错误。",
+    "单一研究报告、研究、试验、队列和效应记录分开链接；不能将报告数或效应行数作为独立研究k。",
+    "每个分析单元是人群×干预/暴露×比较×结局×时间窗×设计×目标场景×证据截止时间；兼容性须先审定。",
+    "所有下述新度量及权重均须在试点、专家共识和可靠性/效度验证后冻结；现有方法学来源只支持概念基础，不背书新总分。"
+  ],
+  "sources": [
+    {
+      "id": "N01",
+      "title": "Cochrane Handbook Chapter IV: Updating a review",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-iv",
+      "verified_date": "2026-10-29",
+      "source_type": "official handbook",
+      "claim": "定期判断是否需要更新；以问题重要性、新资料或新方法对结论的实质影响决定，而非机械追逐发表日期。更新仍须遵从系统综述方法。",
+      "caveat": "指导的是综述更新流程，不提供已验证的产品live评分。"
+    },
+    {
+      "id": "N02",
+      "title": "Cochrane Handbook Chapter 22: Prospective approaches to accumulating evidence",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-22",
+      "verified_date": "2026-10-29",
+      "source_type": "official handbook",
+      "claim": "Living综述需要持续监测并及时纳入新证据，预先说明检索和更新频率。正式序贯统计方法通常不应用于标准更新meta分析的主分析或主要结论。",
+      "caveat": "月度检索和月内纳入是示例，不是所有领域统一时效阈值；不能把TSA当通用稳定性金标准。"
+    },
+    {
+      "id": "N03",
+      "title": "Guidance for Cochrane living systematic reviews (2019)",
+      "url": "https://resources.cochrane.org/sites/resources.cochrane.org/files/uploads/inline-files/Transform/201912_LSR_Revised_Guidance.pdf",
+      "verified_date": "2026-10-29",
+      "source_type": "official guidance",
+      "claim": "Living是更新方式；需主动监测、按预设规则及时纳入重要资料，并公开当前状态和待纳入证据。",
+      "caveat": "2019指导，应结合当前手册和PRISMA-LSR使用。"
+    },
+    {
+      "id": "N04",
+      "title": "PRISMA-Living Systematic Reviews",
+      "url": "https://www.prisma-statement.org/lsr",
+      "verified_date": "2026-10-29",
+      "source_type": "official reporting standard",
+      "claim": "PRISMA-LSR于2024发表，是PRISMA 2020补充，主要面向干预效果living综述，也可用于其他目标及常规更新。",
+      "caveat": "报告完整性不等于方法学质量或临床有效性。"
+    },
+    {
+      "id": "N05",
+      "title": "PROGRESS-Plus — Cochrane Equity",
+      "url": "https://methods.cochrane.org/equity/projects/evidence-equity/progress-plus",
+      "verified_date": "2026-10-29",
+      "source_type": "official methods group",
+      "claim": "公平性因素包括居住地、种族/族裔/文化/语言、职业、性别/生理性别、宗教、教育、社会经济地位、社会资本；Plus包括年龄、残障、关系和时间情境等。",
+      "caveat": "这是识别健康机会/结局分层因素的框架，不是按全球人口比例打分的通用量表。"
+    },
+    {
+      "id": "N06",
+      "title": "GRADE Equity Guidelines 4: Guidance on how to assess and address health equity within the evidence to decision process",
+      "url": "https://doi.org/10.1016/j.jclinepi.2017.08.001",
+      "verified_date": "2026-10-29",
+      "source_type": "original methodology paper",
+      "claim": "EtD应考虑对公平性的潜在影响；不同人群基线风险可导致绝对获益不同，应结合可接受性、可行性及资源条件。",
+      "caveat": "缺乏亚组研究本身不自动证明相对效果不同；不应无充分依据机械下调间接性。"
+    },
+    {
+      "id": "N07",
+      "title": "FDA Diversity Action Plans — June 2024 draft guidance",
+      "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/diversity-action-plans-improve-enrollment-participants-underrepresented-populations-clinical-studies",
+      "verified_date": "2026-10-29",
+      "source_type": "official draft guidance",
+      "claim": "临床研究代表性和招募计划是监管关注的议题，可作为benchmark人口覆盖字段的背景。",
+      "caveat": "所核验官方页明确标Draft / Not for implementation / non-binding。不得写成当前最终指导或全球通用法律要求；该页还披露法院恢复历史版本安排。"
+    },
+    {
+      "id": "N08",
+      "title": "Sex and Gender Equity in Research (SAGER) — EQUATOR",
+      "url": "https://www.equator-network.org/reporting-guidelines/sager-guidelines/",
+      "verified_date": "2026-10-29",
+      "source_type": "official reporting-guideline registry",
+      "claim": "SAGER涉及设计、分析、结果和解释中的sex/gender报告。",
+      "caveat": "Sex与gender不是可互换字段；只提取研究确实报告的内容。"
+    },
+    {
+      "id": "N09",
+      "title": "Cochrane Handbook Chapter 10: Analysing data and undertaking meta-analyses",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-10",
+      "verified_date": "2026-10-29",
+      "source_type": "official handbook",
+      "claim": "选择合适效应尺度、考虑异质性、检验敏感性；亚组差异应以组间比较或交互检验评估，不能从一组显著而另一组不显著推出差异。",
+      "caveat": "本来源支持兼容性和敏感性原则，不支持将不相干疾病效应量合成一个临床效果。"
+    },
+    {
+      "id": "N10",
+      "title": "Cochrane Handbook Chapter 15: Interpreting results and drawing conclusions",
+      "url": "https://www.cochrane.org/authors/handbooks-and-manuals/handbook/current/chapter-15",
+      "verified_date": "2026-10-29",
+      "source_type": "official handbook",
+      "claim": "结论应结合效应大小、置信区间和临床重要性；合适情况下可用已建立的MID帮助解释。",
+      "caveat": "MID依结局、量表及情境；个体内变化阈值不可不加审查充当组间平均效应的阈值。"
+    },
+    {
+      "id": "N11",
+      "title": "ICEMAN: Instrument to assess credibility of effect modification analyses",
+      "url": "https://iceman.help/",
+      "verified_date": "2026-10-29",
+      "source_type": "instrument developers",
+      "claim": "提供RCT及RCT meta分析中效应修饰可信度的判断工具。",
+      "caveat": "不是人口代表性评分；有覆盖也不等于亚组效应已被精确估计。"
+    },
+    {
+      "id": "N12",
+      "title": "Crossmark — Crossref",
+      "url": "https://www.crossref.org/services/crossmark/",
+      "verified_date": "2026-10-29",
+      "source_type": "official metadata provider",
+      "claim": "可查询更正、撤稿或更新关系并通过API获取状态元资料。",
+      "caveat": "提供Crossmark并非质量保证，未发现记录也不证明无更正/撤稿。"
+    },
+    {
+      "id": "N13",
+      "title": "Retraction Watch data — Crossref",
+      "url": "https://www.crossref.org/documentation/retrieve-metadata/retraction-watch/",
+      "verified_date": "2026-10-29",
+      "source_type": "official metadata provider",
+      "claim": "撤稿数据工作日更新，可经API或全量数据获取；也含部分更正、关注声明和恢复记录。",
+      "caveat": "更正和关注声明覆盖不及撤稿；须核验出版者原始通知。"
+    },
+    {
+      "id": "N14",
+      "title": "Adding Error Bars to Evals: A Statistical Approach to Language Model Evaluations",
+      "url": "https://arxiv.org/abs/2411.00640",
+      "verified_date": "2026-10-29",
+      "source_type": "original statistical methods preprint",
+      "claim": "将评测视为实验，讨论模型差异、不确定性和评测设计/功效。",
+      "caveat": "统计方法论文预印本，不是医疗benchmark临床验证证据。"
+    },
+    {
+      "id": "N15",
+      "title": "EXACT BINOMIAL — NIST Dataplot",
+      "url": "https://itl.nist.gov/div898/software/dataplot/refman2/auxillar/exacbino.htm",
+      "verified_date": "2026-10-29",
+      "source_type": "official statistical reference",
+      "claim": "可对二项比例计算单侧或双侧精确置信限。",
+      "caveat": "二项独立观测假设必须成立；同一临床问题下多条claims并非独立。"
+    },
+    {
+      "id": "N16",
+      "title": "NIST AI 600-1: Generative Artificial Intelligence Profile",
+      "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "verified_date": "2026-10-29",
+      "source_type": "official voluntary risk-management profile",
+      "claim": "生成式AI的可信性包括信息完整性、有效可靠、透明、偏差管理，以及对过度信任的关注。",
+      "caveat": "风险管理框架不是临床准确性认证。"
+    }
+  ],
+  "proposed_live_metrics": [
+    {
+      "id": "L1",
+      "name": "必要更新的及时正确完成率",
+      "definition": "由盲态参考委员会将事件判定为应改变检索结果、效应估计、GRADE、适用性、措辞或推荐的更新事件；系统在任务预设窗口W内正确反映变更的加权比例。",
+      "formula": "Σ v_e I(correct_e AND incorporated_at_e - available_at_e <= W_e) / Σ v_e; e in reference-required update events",
+      "unit": "event; grouped by question",
+      "missing_rule": "无必要更新事件时为not estimable，不记100；尚未完成事件保留为未完成并记录截尾。",
+      "caveat": "v和W按临床影响预注册；v不是GRADE数值。"
+    },
+    {
+      "id": "L2",
+      "name": "检索与正确纳入的时间延迟",
+      "definition": "分别测available→detected、detected→correctly incorporated、available→correctly incorporated；报告中位数、P90和未完成比例。",
+      "formula": "lag_e = incorporated_at_e - available_at_e",
+      "unit": "hours/days",
+      "missing_rule": "未完成者右截尾并保留，不能从平均数删去；样本小不强报P90。",
+      "caveat": "available_at必须与所比较赛道允许访问的资源匹配，可得日期不确定时记区间。"
+    },
+    {
+      "id": "L3",
+      "name": "更正／撤稿响应正确率",
+      "definition": "检测原始出版者通知和Crossref相关状态，正确标注可靠性问题并重算或解释保留/排除理由。",
+      "formula": "correctly handled status events / all relevant adjudicated status events",
+      "unit": "event",
+      "missing_rule": "无状态事件为NA；未查状态为missing，不视为无撤稿。",
+      "caveat": "不机械删除所有被提及文献；撤稿原因和对结论影响须审查。"
+    },
+    {
+      "id": "L4",
+      "name": "无关更新误触发率",
+      "definition": "对无临床实质影响、重复报告或不符合资格的新材料，系统无理由改变结论/推荐的比例。",
+      "formula": "unwarranted material changes / reference no-material-change events",
+      "unit": "event",
+      "missing_rule": "无negative control事件为not tested。",
+      "caveat": "新资料不改变结论仍可能要求更新来源、精度或当前状态。"
+    },
+    {
+      "id": "L5",
+      "name": "时态透明完整率",
+      "definition": "公开检索截止日、最后监测日、最后实质更新日、来源可得时间、pending事项、下一次监测承诺和版本差异。",
+      "formula": "correctly reported required timestamp/status fields / required fields",
+      "unit": "delivery",
+      "missing_rule": "unknown明确记unknown；不把网站页面刷新时间当证据更新。",
+      "caveat": "报告完整不能补偿未纳入关键新证据。"
+    }
+  ],
+  "proposed_stability_metrics": [
+    {
+      "id": "S1",
+      "name": "同输入重复性",
+      "definition": "冻结问题、源库、模型/工具版本和预算，独立重复运行；比较结构化临床结论、效应数据、确定性和引用支撑的一致性。",
+      "formula": "pairwise agreement on prespecified clinically material fields; numerical differences relative to unit-specific tolerance",
+      "measurements": "至少3次用于试点诊断，正式重复数依据方差/预算设计；保留全部运行，不挑最好。",
+      "interpretation": "高一致但一直错误仍失败；与正确率并列，不能用字面文本相似度替代。"
+    },
+    {
+      "id": "S2",
+      "name": "临床等价扰动稳健性",
+      "definition": "改变措辞、文献顺序、输出格式或无关背景，不改变PICO与可得证据；观察是否发生无根据的实质变化。",
+      "formula": "1 - unjustified material flips / equivalent perturbation pairs",
+      "measurements": "临床专家先判定扰动等价；中英问题须核验等义。",
+      "interpretation": "若改变年龄、孕期、剂量、基线风险等临床因素，应测适当响应，而非要求不变。"
+    },
+    {
+      "id": "S3",
+      "name": "证据敏感性识别与复算",
+      "definition": "预设leave-one-study/cohort-out、去除高偏倚研究、分析方法/缺失资料假设改变；测系统能否正确重算并说明哪些结论脆弱。",
+      "formula": "correct sensitivity outputs / required sensitivity analyses; report underlying evidence flip rate separately",
+      "measurements": "遵从设计与依赖结构，不能将同一队列多报告逐个当独立研究剔除。",
+      "interpretation": "源证据脆弱不是系统错误；诚实发现脆弱应得到高交付质量。"
+    },
+    {
+      "id": "S4",
+      "name": "时间更新校准",
+      "definition": "在历史时间点t和t+1提供当时可得资料，评价相对参考变化是否该变时变、该保留时保留，并公开改变理由。",
+      "formula": "required-change sensitivity and no-change specificity, both reported; delay additionally measured by L1/L2",
+      "measurements": "包含真正推翻结论、仅提高精度、出现危害、撤稿、低质量无关新材料。",
+      "interpretation": "原封不动不是稳定；频繁改变也不是live。"
+    },
+    {
+      "id": "S5",
+      "name": "产品版本漂移",
+      "definition": "同一冻结套题比较新旧模型/agent版本，报告质量差、退步任务比例与人口亚组差。",
+      "formula": "paired Δ quality with CI; regression fraction and severe-error changes",
+      "measurements": "与文献时间更新分开；区分产品版本、底层模型、检索索引更新。",
+      "interpretation": "净平均提高可能掩盖少数高风险回归。"
+    }
+  ],
+  "proposed_coverage_metrics": [
+    {
+      "id": "C1",
+      "layer": "source evidence",
+      "name": "人口变量报告完整性",
+      "definition": "按研究/独立队列提取年龄范围和分布、生理性别、gender（若报告）、孕哺期、疾病严重度、合并症、残障、地域/照护环境、族裔/种族/文化/语言、社会经济和其他目标相关PROGRESS-Plus变量；同时保留NR和not applicable。",
+      "formula": "reported participant denominator / total participant denominator for each variable where a valid denominator exists",
+      "caveat": "不得由姓名、照片、国家、机构或语言推断族裔/种族或gender；缺失不得分配给已知组。"
+    },
+    {
+      "id": "C2",
+      "layer": "source evidence",
+      "name": "目标人群代表性",
+      "definition": "先界定疾病/干预适用人群，再比较可获证据的群体分布；地域覆盖、人种/族裔覆盖分开。",
+      "formula": "Optional descriptive index: 1 - 0.5 Σ_g |p_evidence,g - p_target,g|, only with compatible categories and credible denominators; report unknown share separately",
+      "caveat": "此指数是本方案拟议，非公认临床量表。已知样本条件下的代表性不能覆盖未知样本偏倚；没有可比目标分布则不计算。"
+    },
+    {
+      "id": "C3",
+      "layer": "source evidence",
+      "name": "目标亚组×关键结局的信息覆盖",
+      "definition": "对预注册的关键亚组和患者重要结局，标注有无直接证据、独立研究k、N/事件数、效应/CI、偏倚风险、GRADE、是否足以支持所作结论。",
+      "formula": "Σ target-cell weights × I(direct usable evidence exists) / Σ target-cell weights; precision adequacy shown as separate flag",
+      "caveat": "“有1人/1篇”不等于充分；不设脱离临床问题的统一N阈值。边际年龄与性别覆盖不证明年龄×性别交叉群体覆盖。"
+    },
+    {
+      "id": "C4",
+      "layer": "delivery performance",
+      "name": "覆盖缺口识别正确率",
+      "definition": "对参考确认的未覆盖、资料未报告或证据不精确的亚组，交付是否明确识别而未虚构有证据。",
+      "formula": "correctly identified coverage/gap cells / required target cells; stratify by supported, absent, unreported, imprecise",
+      "caveat": "正确说明未知可以得高交付分；不能因此宣称底层证据已全面覆盖。"
+    },
+    {
+      "id": "C5",
+      "layer": "delivery performance",
+      "name": "适用性／公平性校准",
+      "definition": "能否解释目标人群与研究人群差异、基线风险、可及性、负担和资源限制，并以适当确定性表述；单列无依据外推率。",
+      "formula": "unsupported subgroup generalizations / all subgroup applicability claims",
+      "caveat": "没有亚组交互证据不能推出效果不同；没发现差异不能推出等效。"
+    },
+    {
+      "id": "C6",
+      "layer": "delivery performance",
+      "name": "系统性能公平性",
+      "definition": "相同质量参考答案下，按年龄/性别/孕哺/地域等问题分层报告交付正确率、严重错误率、拒答与可验证性差异。",
+      "formula": "max–min and prespecified group-pair Δ with CI, denominators shown",
+      "caveat": "这是系统性能差异，与研究人群代表性分开；小亚组CI宽时不排序。"
+    }
+  ],
+  "overall_effect_and_scoring": {
+    "recommended_outputs": [
+      "总体交付质量Q：在同一赛道、访问条件、预算、固定权重下汇总经过临床审定的任务质量；必须显示各维度、关键错误门槛和CI。",
+      "相对标准方法或人工基线的配对质量增益ΔQ，以及可验证的人工时间差/成本差；不称临床治疗效应。",
+      "每个兼容PICO×结局×时间窗×设计内的临床效应θ：RR/OR/HR、MD等，附95%CI、独立k、N、事件数、RoB、GRADE及异质性/敏感性。",
+      "若不能合理合并，应输出结构化叙述和原因；准确拒绝不合理混池应得分。"
+    ],
+    "prohibitions": [
+      "不把不同疾病、干预、结局的RR、OR、HR、SMD直接平均成一个全球临床效应量。",
+      "不将GRADE high/moderate/low/very low映射成100/75/50/25后盲目平均，制造未经验证的精度。",
+      "不让快捷或低成本抵消编造来源、方向颠倒、严重危害遗漏、致命人群误用等重大错误。",
+      "不能把厂商能力声明当本benchmark测量，不得用演示数生成真实产品排名。"
+    ],
+    "proposed_quality_formula": "Q_system = macro-average over prespecified clinical domains of mean task quality; compute only for fixed suite, same track and same measured dimensions. A weighted geometric score can be explored but must be labeled experimental and validated; failing critical gates separately blocks any 'eligible for use' claim.",
+    "numeric_fidelity": "Ratio effects在log尺度比较；连续效应按原量表或预先认可转换核对。提取舍入容差与临床可接受误差分开，不能用宽CI自动原谅错误数字。"
+  },
+  "statistical_plan": {
+    "unit": "clinical question/evidence cell为主要抽样单元；claim级、引用级结果嵌套其内，linked reports/studies/cohorts另建关系。不得把所有claims当独立病例扩大有效样本量。",
+    "paired_design": "所有参赛系统处理相同冻结题集、相同时间点与资源版本；人工基线也记录检索/审稿/仲裁时间、培训和可用工具。",
+    "estimation": "报告均值/中位数、原始分子分母、按领域分层的宏平均；对系统差异使用配对分析，在题目层做cluster bootstrap。若题来自少数专科，按专科分层/多层结构处理，必要时层级模型；重复运行嵌套任务，不独立重抽claims。",
+    "reference": "至少两名独立适任评审先评分，再第三方仲裁；冻结判例手册。分开记录可机核对事实与价值判断。新错误争议可申诉，更正reference时回算所有系统。",
+    "reliability": "对分类项报告原始一致率及适合类别/有序等级的kappa，连续或总体分报告预设ICC；报告CI、分歧分布和仲裁率。不能把专家共识当绝对真值。",
+    "calibration": "要求系统对可核验主张给可信概率或结构化不确定性；对概率输出报告Brier/log score和reliability diagram，risk–coverage curve测选择性回答。拒答率与未完成率单列；仅在固定coverage比较准确性，防止只答简单题。",
+    "severe_error": "预注册可能改变临床行动或造成重大伤害的错误定义；按task报告至少一次严重错误比例，同时给claim层细分。对独立任务用Wilson或exact binomial CI；聚类时按任务聚类，不用citation数当n。",
+    "zero_events": "0次严重错误≠零风险。若n个独立任务均无错误，单侧95%精确上界=1−0.05^(1/n)。n=300时约0.994%；n=1000约0.299%。若希望0错误时上界低于1%，至少299个独立任务；低于0.1%至少2995。聚类依赖和任务选择会削弱外推，不能称临床安全保证。",
+    "sample_size": "先用约50–100个任务试点估计分数方差、系统配对差方差、题目相关性与评审成本，再据最小有意义差及CI精度设计正式规模。候选二项比例最保守精度±5个百分点需要约385个独立任务（近似设计值），多专科/亚组与罕见错误需扩大；不是任意模型均足够的统一n。",
+    "comparison": "主要比较和维度预注册，次要探索分开；多系统/多结局比较考虑多重性。报告Δ的CI及预先定义的实际意义阈值，不凭单一P值排绝对名次。",
+    "ranking": "CI重叠/差异不确定时报告并列或无法区分；可用bootstrap排名区间。不得用统计不确定的微小差制造领先宣传。",
+    "external_validity": "独立外部专科/地区/语言验证；包含不同来源质量与无证据任务；真实前瞻性live队列用于验证历史回放结果。时间切割尽量减少未来信息泄漏。"
+  },
+  "minimal_update_event_schema": [
+    "event_id",
+    "question_id",
+    "evidence_cell_id",
+    "source_id",
+    "study_id",
+    "cohort_id",
+    "source_version",
+    "event_type:new/correction/retraction/reinstatement/guideline_change",
+    "first_public_at",
+    "indexed_at",
+    "benchmark_available_at",
+    "allowed_resource_track",
+    "time_uncertainty",
+    "detected_at",
+    "incorporated_at",
+    "observation_end_at",
+    "reference_required_change",
+    "reference_materiality",
+    "expected_fields_changed",
+    "expected_fields_unchanged",
+    "window_days",
+    "system_version",
+    "run_id",
+    "delivered_change",
+    "correct_handling",
+    "adjudicators",
+    "adjudication_date",
+    "status:complete/pending/censored",
+    "audit_reason"
+  ],
+  "pilot_design_suggestions": [
+    "一批历史时点回放：每题提供t0冻结源库，再加入t1新增/更正/撤稿材料，混入无关/重复报告，量必要变化召回与无必要变化保留。",
+    "一批源证据很薄弱的题：考察系统是否正确承认无证据、低确定性、亚组缺失，而非奖励编造完整答案。",
+    "一批有多报告同队列的题：验证独立k、重复计权与人群覆盖不重复累加。",
+    "一批目标人群包括老年/儿童、孕哺、合并症、多地域和低资源情境的题：评估适用性解释；相关字段按问题决定，不强迫所有研究覆盖所有群体。",
+    "选择少数高更新频率问题做前瞻性live验证，并设置无变化/仅精度改善的negative controls；不要只测试会推翻结论的戏剧性事件。"
+  ]
+}
